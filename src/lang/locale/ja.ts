@@ -3,139 +3,139 @@
 export default {
   'commands': {
     'lint-file': {
-      'name': 'Lint the current file',
-      'error-message': 'Lint File Error in File',
+      'name': '現在のファイルをLintする',
+      'error-message': 'このファイルのLintエラー',
     },
     'lint-file-unless-ignored': {
-      'name': 'Lint the current file unless ignored',
+      'name': '除外されていなければ、現在のファイルをLintする',
     },
     'lint-all-files': {
-      'name': 'Lint all files in the vault',
-      'error-message': 'Lint All Files Error in File',
-      'success-message': 'Linted all files',
-      'errors-message-singular': 'Linted all files and there was 2 error.',
-      'errors-message-plural': 'Linted all files and there were {NUM} errors.',
-      'start-message': 'This will edit all of your files and may introduce errors.',
-      'submit-button-text': 'Lint All',
-      'submit-button-notice-text': 'Linting all files...',
+      'name': 'Vault内のすべてのファイルをLintする',
+      'error-message': 'ファイル内のすべてのファイルのLintエラー',
+      'success-message': 'すべてのファイルをLintしました',
+      'errors-message-singular': 'すべてのファイルをLintし、2つのエラーがありました。',
+      'errors-message-plural': 'すべてのファイルをLintし、{NUM}個のエラーがありました。',
+      'start-message': 'これにより、すべてのファイルが編集され、エラーが発生する可能性があります。',
+      'submit-button-text': 'すべてLintする',
+      'submit-button-notice-text': 'すべてのファイルをLintしています...',
     },
     'lint-all-files-in-folder': {
-      'name': 'Lint all files in the current folder',
-      'start-message': 'This will edit all of your files in {FOLDER_NAME} including files in its subfolders which may introduce errors.',
-      'submit-button-text': 'Lint All Files in {FOLDER_NAME}',
-      'submit-button-notice-text': 'Linting all files in {FOLDER_NAME}...',
-      'error-message': 'Lint All Files in Folder Error in File',
-      'success-message': 'Linted all {NUM} files in {FOLDER_NAME}.',
-      'message-singular': 'Linted all {NUM} files in {FOLDER_NAME} and there was 1 error.',
-      'message-plural': 'Linted all {FILE_COUNT} files in {FOLDER_NAME} and there were {ERROR_COUNT} error.',
+      'name': '現在のフォルダ内のすべてのファイルをLintする',
+      'start-message': 'これにより、{FOLDER_NAME}内のすべてのファイル（サブフォルダ内のファイルも含む）が編集され、エラーが発生する可能性があります。',
+      'submit-button-text': '{FOLDER_NAME}内のすべてのファイルをLintする',
+      'submit-button-notice-text': '{FOLDER_NAME}内のすべてのファイルをLintしています...',
+      'error-message': '{FOLDER_NAME}内のすべてのファイルのLintエラー',
+      'success-message': '{FOLDER_NAME}内の{NUM}個のファイルをLintしました。',
+      'message-singular': '{FOLDER_NAME}内の{NUM}個のファイルをLintし、1つのエラーがありました。',
+      'message-plural': '{FOLDER_NAME}内の{FILE_COUNT}個のファイルをLintし、{ERROR_COUNT}個のエラーがありました。',
     },
     'paste-as-plain-text': {
-      'name': 'Paste as Plain Text & without Modifications',
+      'name': 'プレーンテキストとして貼り付ける（変更なし）',
     },
     'ignore-folder': {
-      'name': 'Ignore folder',
+      'name': 'フォルダを無視する',
     },
     'ignore-file': {
-      'name': 'Ignore file',
+      'name': 'ファイルを無視する',
     },
     'lint-file-pop-up-menu-text': {
-      'name': 'Lint file',
+      'name': 'ファイルをLintする',
     },
     'lint-folder-pop-up-menu-text': {
-      'name': 'Lint folder',
+      'name': 'フォルダをLintする',
     },
     'ignore-file-pop-up-menu-text': {
-      'name': 'Ignore file in Linter',
+      'name': 'ファイルをLintから無視する',
     },
     'ignore-folder-pop-up-menu-text': {
-      'name': 'Ignore folder in Linter',
+      'name': 'フォルダをLintから無視する',
     },
   },
 
   'logs': {
-    'plugin-load': 'Loading plugin',
-    'plugin-unload': 'Unloading plugin',
-    'folder-lint': 'Linting folder ',
-    'linter-run': 'Running linter',
-    'file-change-yaml-lint-run': 'Running editor content change YAML linting',
-    'file-change-yaml-lint-skipped': 'No file change detected, so YAML linting skipped',
-    'file-change-yaml-lint-warning': 'No file info is present, but debounce ran. Something went wrong somewhere.',
-    'paste-link-warning': 'aborted paste lint as the clipboard content is a link and doing so will avoid conflicts with other plugins that modify pasting.',
-    'see-console': 'See console for more details.',
-    'unknown-error': 'An unknown error occurred during linting.',
-    'moment-locale-not-found': 'Trying to switch Moment.js locale to {MOMENT_LOCALE}, got {CURRENT_LOCALE}',
-    'file-change-lint-message-start': 'Linted',
-    'custom-command-callback-warning': 'Please only set the custom command callback for integration tests.',
+    'plugin-load': 'プラグインを読み込み中',
+    'plugin-unload': 'プラグインをアンロード中',
+    'folder-lint': 'フォルダをLint中 ',
+    'linter-run': 'Linterを実行中',
+    'file-change-yaml-lint-run': 'エディタの内容変更によるYAMLのLintを実行中',
+    'file-change-yaml-lint-skipped': 'ファイルの変更が検出されなかったため、YAMLのLintをスキップしました。',
+    'file-change-yaml-lint-warning': 'ファイル情報が存在しませんが、デバウンスが実行されました。どこかで問題が発生しました。',
+    'paste-link-warning': 'クリップボードの内容がリンクであるため、貼り付けのLintを中止しました。これにより、貼り付けを変更する他のプラグインとの競合を回避します。',
+    'see-console': '詳細はコンソールを参照してください。',
+    'unknown-error': 'Lint中に不明なエラーが発生しました。',
+    'moment-locale-not-found': 'Moment.jsのロケールを{MOMENT_LOCALE}に切り替えようとしましたが、現在のロケールは{CURRENT_LOCALE}です。',
+    'file-change-lint-message-start': 'Lintされました',
+    'custom-command-callback-warning': 'P統合テストのためにのみカスタムコマンドコールバックを設定してください。',
 
     // rules-runner.ts
-    'pre-rules': 'rules before regular rules',
-    'post-rules': 'rules after regular rules',
-    'rule-running': 'rules running',
-    'custom-regex': 'custom regex rules',
-    'running-custom-regex': 'Running Custom Regex',
-    'running-custom-lint-command': 'Running Custom Lint Commands',
-    'custom-lint-duplicate-warning': 'You cannot run the same command ("{COMMAND_NAME}") as a custom lint rule twice.',
-    'custom-lint-error-message': 'Custom Lint Command',
+    'pre-rules': '基本ルールの前のルール',
+    'post-rules': '基本ルールの後のルール',
+    'rule-running': 'ルールを実行中',
+    'custom-regex': 'カスタム正規表現ルール',
+    'running-custom-regex': 'カスタム正規表現を実行中',
+    'running-custom-lint-command': 'カスタムLintコマンドを実行中',
+    'custom-lint-duplicate-warning': '同じコマンド（"{COMMAND_NAME}"）をカスタムLintルールとして2回実行することはできません。',
+    'custom-lint-error-message': 'カスタムLintコマンド',
 
     // rules-runner.ts and rule-builder.ts
-    'disabled-text': 'is disabled',
+    'disabled-text': 'は無効です',
 
     // rule-builder.ts
-    'run-rule-text': 'Running',
+    'run-rule-text': '実行中',
 
     // logger.ts
-    'timing-key-not-found': 'timing key \'{TIMING_KEY}\' does not exist in the timing info list, so it was ignored',
+    'timing-key-not-found': 'タイミングキー \'{TIMING_KEY}\' はタイミング情報リストに存在しないため、無視されました',
     'milliseconds-abbreviation': 'ms',
 
-    'invalid-date-format-error': `The format of the created date '{DATE}' could not be parsed or determined so the created date was left alone in '{FILE_NAME}'`,
+    'invalid-date-format-error': `作成日付の形式 '{DATE}' を解析または判別できなかったため、作成日付は '{FILE_NAME}' にそのまま残されました`,
 
     // yaml.ts
-    'invalid-delimiter-error-message': 'delimiter is only allowed to be a single character',
+    'invalid-delimiter-error-message': '区切り文字は1文字のみ許可されています',
 
     // mdast.ts
-    'missing-footnote-error-message': `Footnote '{FOOTNOTE}' has no corresponding footnote reference before the footnote contents and cannot be processed. Please make sure that all footnotes have a corresponding reference before the content of the footnote.`,
-    'too-many-footnotes-error-message': `Footnote key '{FOOTNOTE_KEY}' has more than 1 footnote referencing it. Please update the footnotes so that there is only one footnote per footnote key.`,
+    'missing-footnote-error-message': `脚注 '{FOOTNOTE}' には対応する脚注参照が脚注内容の前に存在しないため、処理できません。すべての脚注に脚注内容の前に対応する参照があることを確認してください。`,
+    'too-many-footnotes-error-message': `脚注キー '{FOOTNOTE_KEY}' に複数の脚注が参照されています。脚注を更新して、脚注キーごとに1つの脚注のみが存在するようにしてください。`,
 
     // rules.ts
-    'wrapper-yaml-error': 'error in the YAML: {ERROR_MESSAGE}',
-    'wrapper-unknown-error': 'unknown error: {ERROR_MESSAGE}',
+    'wrapper-yaml-error': 'YAMLエラー: {ERROR_MESSAGE}',
+    'wrapper-unknown-error': '不明なエラー: {ERROR_MESSAGE}',
   },
 
   'notice-text': {
-    'empty-clipboard': 'There is no clipboard content.',
-    'characters-added': 'characters added',
-    'characters-removed': 'characters removed',
-    'copy-to-clipboard-failed': 'Failed to copy text to clipboard: ',
+    'empty-clipboard': 'クリップボードに内容がありません。',
+    'characters-added': '文字が追加されました',
+    'characters-removed': '文字が削除されました',
+    'copy-to-clipboard-failed': 'テキストのクリップボードへのコピーに失敗しました: ',
   },
 
   // rule-alias-suggester.ts
-  'all-rules-option': 'All',
+  'all-rules-option': 'すべて',
 
   // settings.ts
   'linter-title': 'Linter',
-  'empty-search-results-text': 'No settings match search',
+  'empty-search-results-text': '検索に一致する設定がありません',
 
   // lint-confirmation-modal.ts
-  'warning-text': 'Warning',
-  'file-backup-text': 'Make sure you have backed up your files.',
-  'custom-command-warning': 'Linting multiple files with custom commands enabled is a slow process that requires the ability to open panes in the side panel. It is noticeably slower than running without custom commands enabled. Please proceed with caution.',
-  'cancel-button-text': 'Cancel',
+  'warning-text': '警告',
+  'file-backup-text': 'ファイルのバックアップを取っていることを確認してください。',
+  'custom-command-warning': 'カスタムコマンドが有効になっている状態で複数のファイルをLintするのは、サイドパネルでペインを開く能力が必要な遅いプロセスです。カスタムコマンドが無効な状態で実行するよりも明らかに遅くなります。注意して進めてください。',
+  'cancel-button-text': 'キャンセル',
 
-  'copy-aria-label': 'Copy',
+  'copy-aria-label': 'コピー',
 
-  'disabled-other-rule-notice': 'If you enable <code>{NAME_1}</code>, it will disable <code>{NAME_2}</code>. Would you like to proceed?',
-  'disabled-conflicting-rule-notice': '{NAME_1}, conflicts with {NAME_2}, so it has been turned off. You can switch which setting is off in the settings tab.',
+  'disabled-other-rule-notice': '<code>{NAME_1}</code>を有効にすると、<code>{NAME_2}</code>が無効になります。続行しますか？',
+  'disabled-conflicting-rule-notice': '{NAME_1}は{NAME_2}と競合しているため、無効になりました。設定タブでどの設定をオフにするかを切り替えることができます。',
 
   // confirm-rule-disable-modal.ts
   'ok': 'Ok',
 
   // parse-results-modal.ts
-  'parse-results-heading-text': 'Custom Parse Values',
-  'file-parse-description-text': 'The following is the list of custom replacements found in {FILE}.',
-  'no-parsed-values-found-text': 'There were no custom replacements found in {FILE}. Please make sure that all tables with custom replacements in {FILE} only have two columns and all rows start and end with a pipe (i.e. |).',
-  'find-header-text': 'Word to Find',
-  'replace-header-text': 'Replacement Word',
-  'close-button-text': 'Close',
+  'parse-results-heading-text': 'カスタム解析値',
+  'file-parse-description-text': '{FILE}で見つかったカスタム置換のリストは以下の通りです。',
+  'no-parsed-values-found-text': '{FILE}でカスタム置換は見つかりませんでした。{FILE}内のカスタム置換を含むすべてのテーブルが2列のみで、すべての行がパイプ（例：|）で始まり終わっていることを確認してください。',
+  'find-header-text': '検索する単語',
+  'replace-header-text': '置換する単語',
+  'close-button-text': '閉じる',
 
   'tabs': {
     'names': {
@@ -241,38 +241,37 @@ export default {
   'options': {
     'custom-command': {
       // custom-command-option.ts
-      'name': 'Custom Commands',
-      'description': 'Custom commands are Obsidian commands that get run after the linter is finished running its regular rules. This means that they do not run before the YAML timestamp logic runs, so they can cause YAML timestamp to be triggered on the next run of the linter. You may only select an Obsidian command once.',
-      'warning': 'When selecting an option, make sure to select the option either by using the mouse or by hitting the enter key. Other selection methods may not work and only selections of an actual Obsidian command or an empty string will be saved.',
-
-      'add-input-button-text': 'Add new command',
-      'command-search-placeholder-text': 'Obsidian command',
-      'move-up-tooltip': 'Move up',
-      'move-down-tooltip': 'Move down',
-      'delete-tooltip': 'Delete',
+      'name': 'カスタムコマンド',
+      'description': 'カスタムコマンドは、リンターが通常のルールを実行した後に実行されるObsidianコマンドです。これは、YAMLタイムスタンプロジックが実行される前に実行されないことを意味し、リンターの次の実行でYAMLタイムスタンプがトリガーされる可能性があります。１つのObsidianコマンドのみを選択できます。',
+      'warning': 'オプションを選択する際は、マウスを使用するか、Enterキーを押して選択してください。他の選択方法は機能しない場合があり、実際のObsidianコマンドまたは空の文字列の選択のみが保存されます。',
+      'add-input-button-text': '新しいコマンドを追加',
+      'command-search-placeholder-text': 'Obsidianコマンド',
+      'move-up-tooltip': '上に移動',
+      'move-down-tooltip': '下に移動',
+      'delete-tooltip': '削除',
     },
     'custom-replace': {
       // custom-replace-option.ts
-      'name': 'Custom Regex Replacement',
-      'description': 'Custom regex replacement can be used to replace anything that matches the find regex with the replacement value. The replace and find values will need to be valid regex values.',
-      'warning': 'Use this with caution if you do not know regex. Also, please make sure that if you use lookbehinds in your regex on iOS mobile that you are on a version that supports using them.',
-      'add-input-button-text': 'Add new regex replacement',
-      'regex-to-find-placeholder-text': 'regex to find',
-      'flags-placeholder-text': 'flags',
-      'regex-to-replace-placeholder-text': 'regex to replace',
-      'label-placeholder-text': 'label',
-      'move-up-tooltip': 'Move up',
-      'move-down-tooltip': 'Move down',
-      'delete-tooltip': 'Delete',
+      'name': 'カスタム正規表現置換',
+      'description': 'カスタム正規表現置換は、検索する正規表現に一致するものを置換する値に置き換えるために使用できます。置換する値と検索する値は有効な正規表現である必要があります。',
+      'warning': '正規表現を知らない場合は注意して使用してください。また、iOSモバイルで正規表現の後読みを使用する場合は、それをサポートするバージョンであることを確認してください。',
+      'add-input-button-text': '新しい正規表現置換を追加',
+      'regex-to-find-placeholder-text': '検索する正規表現',
+      'flags-placeholder-text': 'フラグ',
+      'regex-to-replace-placeholder-text': '置換する正規表現',
+      'label-placeholder-text': 'ラベル',
+      'move-up-tooltip': '上に移動',
+      'move-down-tooltip': '下に移動',
+      'delete-tooltip': '削除',
     },
     'custom-auto-correct': {
-      'delete-tooltip': 'Delete',
-      'show-parsed-contents-tooltip': 'View parsed replacements',
-      'custom-row-parse-warning': '"{ROW}" is not a valid row with custom replacements. It must have only 2 columns.',
-      'file-search-placeholder-text': 'File name',
-      'add-new-replacement-file-tooltip': 'Add another custom file',
-      'warning-text': 'Selected files will automatically have {NAME} disabled.',
-      'refresh-tooltip-text': 'Reload custom replacements',
+      'delete-tooltip': '削除',
+      'show-parsed-contents-tooltip': '解析された置換を表示',
+      'custom-row-parse-warning': '"{ROW}" は、カスタム置換の有効な行ではありません。2列のみである必要があります。',
+      'file-search-placeholder-text': 'ファイル名',
+      'add-new-replacement-file-tooltip': '別のカスタムファイルを追加',
+      'warning-text': '選択したファイルは自動的に {NAME} が無効になります。',
+      'refresh-tooltip-text': 'カスタム置換をリロード',
     },
   },
 
@@ -280,691 +279,691 @@ export default {
   'rules': {
     // auto-correct-common-misspellings.ts
     'auto-correct-common-misspellings': {
-      'name': 'Auto-correct Common Misspellings',
-      'description': 'Uses a dictionary of common misspellings to automatically convert them to their proper spellings. See <a href="https://github.com/platers/obsidian-linter/tree/master/src/utils/default-misspellings.md">auto-correct map</a> for the full list of auto-corrected words. <b>Note: this list can work on text from multiple languages, but this list is the same no matter what language is currently in use.</b>',
+      'name': '一般的な誤字の自動修正',
+      'description': '一般的な誤字を自動的に正しい綴りに変換するための辞書を使用します。完全な自動修正単語のリストについては、<a href="https://github.com/platers/obsidian-linter/tree/master/src/utils/default-misspellings.md">自動修正マップ</a>を参照してください。<b>注：このリストは複数の言語のテキストで機能することがありますが、現在使用されている言語に関係なく同じリストが使用されます。</b>',
       'ignore-words': {
-        'name': 'Ignore Words',
-        'description': 'A comma separated list of lowercased words to ignore when auto-correcting',
+        'name': '除外する語',
+        'description': 'コンマ区切りの小文字の単語のリストで、自動修正時に無視されます。',
       },
       'extra-auto-correct-files': {
-        'name': 'Extra Auto-Correct Source Files',
-        'description': 'These are files that have a markdown table in them that have the initial word and the word to correct it to (these are case insensitive corrections). <b>Note: the tables used should have the starting and ending <code>|</code> indicators present for each line.</b>',
+        'name': '追加の自動修正ソースファイル',
+        'description': 'これらは、最初の単語と修正する単語を含むマークダウンテーブルがあるファイルです（これらは大文字と小文字を区別しない修正です）。<b>注：使用されるテーブルは、各行に開始および終了の<code>|</code>インジケーターが存在する必要があります。</b>',
       },
       'skip-words-with-multiple-capitals': {
-        'name': 'Skip Words with Multiple Capitals',
-        'description': 'Will skip any files that have a capital letter in them other than as the first letter of the word. Acronyms and some other words can benefit from this. It may cause issues with proper nouns being properly fixed.',
+        'name': '複数の大文字を含む語をスキップ',
+        'description': '単語の最初の文字以外に大文字を含むファイルはスキップされます。頭字語やその他の単語に役立ちますが、固有名詞の修正に問題を引き起こす可能性があります。',
       },
-      'default-install': 'You are using Auto-correct Common Misspellings. In order to do so, the default misspellings will be downloaded. This should only happen once. Please wait...',
-      'default-install-failed': 'Failed to download {URL}. Disabling Auto-correct Common Misspellings.',
-      'defaults-missing': 'Failed to find default common auto-correct file: {FILE}.',
+      'default-install': '一般的な誤字の自動修正を使用しています。これを行うために、デフォルトの誤字訂正がダウンロードされます。これは一度だけ行われるはずです。しばらくお待ちください...',
+      'default-install-failed': '{URL} のダウンロードに失敗しました。一般的な誤字の自動修正を無効にします。',
+      'defaults-missing': 'デフォルトの一般的な自動修正ファイルが見つかりませんでした。: {FILE}',
     },
     // add-blank-line-after-yaml.ts
     'add-blank-line-after-yaml': {
-      'name': 'Add Blank Line After YAML',
-      'description': 'Adds a blank line after the YAML block if it does not end the current file or it is not already followed by at least 1 blank line',
+      'name': 'YAMLの後に空行を追加',
+      'description': 'YAMLブロックの後に空行を追加します。現在のファイルの終わりでない場合、またはすでに少なくとも1つの空行が続いていない場合に適用されます。',
     },
     // blockquotify-on-paste.ts
     'add-blockquote-indentation-on-paste': {
-      'name': 'Add Blockquote Indentation on Paste',
-      'description': 'Adds blockquotes to all but the first line, when the cursor is in a blockquote/callout line during pasting',
+      'name': '貼り付け時にブロック引用のインデントを追加',
+      'description': '貼り付け時にカーソルがブロック引用/コールアウト行にある場合、最初の行を除くすべての行にブロック引用を追加します。',
     },
     // blockquote-style.ts
     'blockquote-style': {
-      'name': 'Blockquote Style',
-      'description': 'Makes sure the blockquote style is consistent.',
+      'name': 'Blockquoteのスタイル',
+      'description': 'Blockquoteのスタイルが一貫していることを確認します。',
       'style': {
-        'name': 'Style',
-        'description': 'The style used on blockquote indicators',
+        'name': 'スタイル',
+        'description': 'Blockquoteインジケーターに使用されるスタイル',
       },
     },
     // capitalize-headings.ts
     'capitalize-headings': {
-      'name': 'Capitalize Headings',
-      'description': 'Headings should be formatted with capitalization',
+      'name': '見出しの大文字化',
+      'description': '見出しは大文字でフォーマットする必要があります',
       'style': {
-        'name': 'Style',
-        'description': 'The style of capitalization to use',
+        'name': 'スタイル',
+        'description': '使用する大文字化のスタイル',
       },
       'ignore-case-words': {
-        'name': 'Ignore Cased Words',
-        'description': 'Only apply title case style to words that are all lowercase',
+        'name': '大文字を無視する語',
+        'description': 'すべて小文字の単語にのみタイトルケースのスタイルを適用します',
       },
       'ignore-words': {
-        'name': 'Ignore Words',
-        'description': 'A comma separated list of words to ignore when capitalizing',
+        'name': '無視する語',
+        'description': '大文字化時に無視する単語のコンマ区切りリスト',
       },
       'lowercase-words': {
-        'name': 'Lowercase Words',
-        'description': 'A comma separated list of words to keep lowercase',
+        'name': '小文字の単語',
+        'description': '小文字のままにする単語のコンマ区切りリスト',
       },
     },
     // compact-yaml.ts
     'compact-yaml': {
-      'name': 'Compact YAML',
-      'description': 'Removes leading and trailing blank lines in the YAML front matter.',
+      'name': 'コンパクトYAML',
+      'description': 'YAML front-matter の先頭と末尾の空行を削除します。',
       'inner-new-lines': {
-        'name': 'Inner New Lines',
-        'description': 'Remove new lines that are not at the start or the end of the YAML',
+        'name': '内部の改行',
+        'description': 'YAMLの先頭や末尾ではない改行を削除します。',
       },
     },
     // consecutive-blank-lines.ts
     'consecutive-blank-lines': {
-      'name': 'Consecutive blank lines',
-      'description': 'There should be at most one consecutive blank line.',
+      'name': '連続する空行',
+      'description': '連続する空行は最大で1行までにしてください。',
     },
     // convert-bullet-list-markers.ts
     'convert-bullet-list-markers': {
-      'name': 'Convert Bullet List Markers',
-      'description': 'Converts common bullet list marker symbols to markdown list markers.',
+      'name': '箇条書きリストマーカーの変換',
+      'description': '一般的な箇条書きリストマーカー記号をマークダウンリストマーカーに変換します。',
     },
     // convert-spaces-to-tabs.ts
     'convert-spaces-to-tabs': {
-      'name': 'Convert Spaces to Tabs',
-      'description': 'Converts leading spaces to tabs.',
+      'name': 'スペースをタブに変換',
+      'description': '先頭のスペースをタブに変換します。',
       'tabsize': {
-        'name': 'Tabsize',
-        'description': 'Number of spaces that will be converted to a tab',
+        'name': 'タブサイズ',
+        'description': 'タブに変換されるスペースの数',
       },
     },
     // dedupe-yaml-array-values.ts
     'dedupe-yaml-array-values': {
-      'name': 'Dedupe YAML Array Values',
-      'description': 'Removes duplicate array values in a case sensitive manner.',
+      'name': 'YAML配列値の重複排除',
+      'description': '大文字と小文字を区別して重複する配列値を削除します。',
       'dedupe-alias-key': {
-        'name': 'Dedupe YAML aliases section',
-        'description': 'Turns on removing duplicate aliases.',
+        'name': 'YAMLエイリアスセクションの重複排除',
+        'description': '重複するエイリアスの削除を有効にします。',
       },
       'dedupe-tag-key': {
-        'name': 'Dedupe YAML tags section',
-        'description': 'Turns on removing duplicate tags.',
+        'name': 'YAMLタグセクションの重複排除',
+        'description': '重複するタグの削除を有効にします。',
       },
       'dedupe-array-keys': {
-        'name': 'Dedupe YAML array sections',
-        'description': 'Turns on removing duplicate values for regular YAML arrays',
+        'name': 'YAML配列セクションの重複排除',
+        'description': '通常のYAML配列の重複する値の削除を有効にします。',
       },
       'ignore-keys': {
-        'name': 'YAML Keys to Ignore',
-        'description': 'A list of YAML keys without the ending colon on their own lines that are not meant to have duplicate values removed from them.',
+        'name': '無視するYAMLキー',
+        'description': '重複する値を削除しないYAMLキーのリスト（末尾のコロンなし）です。',
       },
     },
     // default-language-for-code-fences.ts
     'default-language-for-code-fences': {
-      'name': 'Default Language For Code Fences',
-      'description': 'Add a default language to code fences that do not have a language specified.',
+      'name': 'コードフェンスのデフォルト言語',
+      'description': '言語指定のないコードフェンスにデフォルトの言語を追加します。',
       'default-language': {
-        'name': 'Programming Language',
-        'description': 'Leave empty to do nothing. Languages tags can be found <a href="https://prismjs.com/#supported-languages">here</a>.',
+        'name': 'プログラミング言語',
+        'description': '何もしない場合は空のままにします。言語タグは<a href="https://prismjs.com/#supported-languages">こちら</a>で確認できます。',
       },
     },
     // emphasis-style.ts
     'emphasis-style': {
-      'name': 'Emphasis Style',
-      'description': 'Makes sure the emphasis style is consistent.',
+      'name': '強調スタイル',
+      'description': '強調スタイルが一貫していることを確認します。',
       'style': {
-        'name': 'Style',
-        'description': 'The style used to denote emphasized content',
+        'name': 'スタイル',
+        'description': '強調されたコンテンツを示すために使用されるスタイル',
       },
     },
     // empty-line-around-blockquotes.ts
     'empty-line-around-blockquotes': {
-      'name': 'Empty Line Around Blockquotes',
-      'description': 'Ensures that there is an empty line around blockquotes unless they start or end a document. <b>Note: an empty line is either one less level of nesting for blockquotes or a newline character.</b>',
+      'name': '引用符の周りの空行',
+      'description': '引用符の周りに空行があることを確認します。ただし、ドキュメントの開始または終了時は除きます。<b>注：空行は引用符のネストレベルが1つ少ないか、改行文字のいずれかです。</b>',
     },
     // empty-line-around-code-fences.ts
     'empty-line-around-code-fences': {
-      'name': 'Empty Line Around Code Fences',
-      'description': 'Ensures that there is an empty line around code fences unless they start or end a document.',
+      'name': 'コードフェンスの周りの空行',
+      'description': 'コードフェンスの周りに空行があることを確認します。ただし、ドキュメントの開始または終了時は除きます。',
     },
     // empty-line-around-math-block.ts
     'empty-line-around-math-blocks': {
-      'name': 'Empty Line Around Math Blocks',
-      'description': 'Ensures that there is an empty line around math blocks using <code>Number of Dollar Signs to Indicate a Math Block</code> to determine how many dollar signs indicates a math block for single-line math.',
+      'name': '数式ブロックの周りの空行',
+      'description': '<code>数式ブロックを示すドル記号の数</code>を使用して、単一行の数式の数式ブロックの周りに空行があることを確認します。',
     },
     // empty-line-around-tables.ts
     'empty-line-around-tables': {
-      'name': 'Empty Line Around Tables',
-      'description': 'Ensures that there is an empty line around github flavored tables unless they start or end a document.',
+      'name': 'テーブルの周りの空行',
+      'description': 'GitHub風のテーブルの周りに空行があることを確認します。ただし、ドキュメントの開始または終了時は除きます。',
     },
     // escape-yaml-special-characters.ts
     'escape-yaml-special-characters': {
-      'name': 'Escape YAML Special Characters',
-      'description': 'Escapes colons with a space after them (: ), single quotes (\'), and double quotes (") in YAML.',
+      'name': 'YAML特殊文字のエスケープ',
+      'description': 'YAML内のコロンの後にスペースを追加する(: )、シングルクォート(\')、ダブルクォート(")をエスケープします。',
       'try-to-escape-single-line-arrays': {
-        'name': 'Try to Escape Single Line Arrays',
-        'description': 'Tries to escape array values assuming that an array starts with "[", ends with "]", and has items that are delimited by ",".',
+        'name': '単一行配列のエスケープを試みる',
+        'description': '配列が "[" で始まり "]" で終わり、項目が "," で区切られていると仮定して、配列値のエスケープを試みます。',
       },
     },
     // file-name-heading.ts
     'file-name-heading': {
-      'name': 'File Name Heading',
-      'description': 'Inserts the file name as a H1 heading if no H1 heading exists.',
+      'name': 'ファイル名見出し',
+      'description': 'H1見出しが存在しない場合にファイル名をH1見出しとして挿入します。',
     },
     // footnote-after-punctuation.ts
     'footnote-after-punctuation': {
-      'name': 'Footnote after Punctuation',
-      'description': 'Ensures that footnote references are placed after punctuation, not before.',
+      'name': '句読点の後の脚注',
+      'description': '脚注の参照が句読点の後に配置されていることを確認します。句読点の前ではありません。',
     },
     // force-yaml-escape.ts
     'force-yaml-escape': {
-      'name': 'Force YAML Escape',
-      'description': 'Escapes the values for the specified YAML keys.',
+      'name': 'YAMLの強制エスケープ',
+      'description': '指定されたYAMLキーの値をエスケープします。',
       'force-yaml-escape-keys': {
-        'name': 'Force YAML Escape on Keys',
-        'description': 'Uses the YAML escape character on the specified YAML keys separated by a new line character if it is not already escaped. Do not use on YAML arrays.',
+        'name': 'YAMLキーの強制エスケープ',
+        'description': '指定されたYAMLキーに対して、まだエスケープされていない場合にYAMLのエスケープ文字を使用します。YAML配列には使用しないでください。',
       },
     },
     // format-tags-in-yaml.ts
     'format-tags-in-yaml': {
-      'name': 'Format Tags in YAML',
-      'description': 'Remove Hashtags from tags in the YAML frontmatter, as they make the tags there invalid.',
+      'name': 'YAML内のタグのフォーマット',
+      'description': 'YAML front-matter 内のタグからハッシュタグを削除します。これにより、タグが無効になるのを防ぎます。',
     },
     // format-yaml-array.ts
     'format-yaml-array': {
-      'name': 'Format YAML Array',
-      'description': 'Allows for the formatting of regular YAML arrays as either multi-line or single-line and <code>tags</code> and <code>aliases</code> are allowed to have some Obsidian specific YAML formats. <b>Note: that single string to single-line goes from a single string entry to a single-line array if more than 1 entry is present. The same is true for single string to multi-line except it becomes a multi-line array.</b>',
+      'name': 'YAML配列のフォーマット',
+      'description': '通常のYAML配列を複数行または単一行としてフォーマットできるようにし、<code>tags</code>および<code>aliases</code>はObsidian固有のYAMLフォーマットを持つことが許可されています。<b>注意：単一文字列から単一行への変換は、1つ以上のエントリが存在する場合に単一文字列のエントリから単一行配列に変わります。同様に、単一文字列から複数行への変換は複数行配列になります。</b>',
       'alias-key': {
-        'name': 'Format YAML aliases section',
-        'description': 'Turns on formatting for the YAML aliases section. You should not enable this option alongside the rule <code>YAML Title Alias</code> as they may not work well together or they may have different format styles selected causing unexpected results.',
+        'name': 'YAMLエイリアスセクションのフォーマット',
+        'description': 'YAMLエイリアスセクションのフォーマットを有効にします。ルール<code>YAML Title Alias</code>と一緒にこのオプションを有効にしないでください。これらはうまく機能しないか、異なるフォーマットスタイルが選択されて予期しない結果を招く可能性があります。',
       },
       'tag-key': {
-        'name': 'Format YAML tags section',
-        'description': 'Turns on formatting for the YAML tags section.',
+        'name': 'YAMLタグセクションのフォーマット',
+        'description': 'YAMLタグセクションのフォーマットを有効にします。',
       },
       'default-array-style': {
-        'name': 'Default YAML array section style',
-        'description': 'The style of other YAML arrays that are not <code>tags</code>, <code>aliases</code> or  in <code>Force key values to be single-line arrays</code> and <code>Force key values to be multi-line arrays</code>',
+        'name': 'デフォルトのYAML配列セクションスタイル',
+        'description': 'YAML配列のスタイル（<code>tags</code>、<code>aliases</code>、および<code>単一行配列に強制するキーの値</code>や<code>複数行配列に強制するキーの値</code>に含まれないもの）',
       },
       'default-array-keys': {
-        'name': 'Format YAML array sections',
-        'description': 'Turns on formatting for regular YAML arrays',
+        'name': 'YAML配列セクションのフォーマット',
+        'description': '通常のYAML配列のフォーマットを有効にします。',
       },
       'force-single-line-array-style': {
-        'name': 'Force key values to be single-line arrays',
-        'description': 'Forces the YAML array for the new line separated keys to be in single-line format (leave empty to disable this option)',
+        'name': '単一行配列に強制するキーの値',
+        'description': '改行で区切られたキーの値のYAML配列を単一行形式に強制します（このオプションを無効にするには空のままにしてください）',
       },
       'force-multi-line-array-style': {
-        'name': 'Force key values to be multi-line arrays',
-        'description': 'Forces the YAML array for the new line separated keys to be in multi-line format (leave empty to disable this option)',
+        'name': '複数行配列に強制するキーの値',
+        'description': '改行で区切られたキーの値のYAML配列を複数行形式に強制します（このオプションを無効にするには空のままにしてください）',
       },
     },
     // header-increment.ts
     'header-increment': {
-      'name': 'Header Increment',
-      'description': 'Heading levels should only increment by one level at a time',
+      'name': 'ヘッダーのインクリメント',
+      'description': '見出しレベルは一度に1レベルずつしか増加しないようにします',
       'start-at-h2': {
-        'name': 'Start Header Increment at Heading Level 2',
-        'description': 'Makes heading level 2 the minimum heading level in a file for header increment and shifts all headings accordingly so they increment starting with a level 2 heading.',
+        'name': '見出しレベル2でヘッダーのインクリメントを開始',
+        'description': 'ファイル内の最小見出しレベルを2にし、すべての見出しをそれに応じてシフトして、レベル2の見出しから始まるようにします。',
       },
     },
     // heading-blank-lines.ts
     'heading-blank-lines': {
-      'name': 'Heading blank lines',
-      'description': 'All headings have one blank line both before and after (except where the heading is at the beginning or end of the document).',
+      'name': '見出しの空白行',
+      'description': 'すべての見出しの前後に1行の空白行を入れます（見出しが文書の先頭または末尾にある場合を除く）。',
       'bottom': {
-        'name': 'Bottom',
-        'description': 'Ensures one blank line after headings',
+        'name': '下部',
+        'description': '見出しの後に1行の空白行を確保します',
       },
       'empty-line-after-yaml': {
-        'name': 'Empty Line Between YAML and Header',
-        'description': 'Keep the empty line between the YAML frontmatter and header',
+        'name': 'YAMLと見出しの間の空行',
+        'description': 'YAML front-matter と見出しの間の空行を保持します',
       },
     },
     // headings-start-line.ts
     'headings-start-line': {
-      'name': 'Headings Start Line',
-      'description': 'Headings that do not start a line will have their preceding whitespace removed to make sure they get recognized as headers.',
+      'name': '見出しの開始行',
+      'description': '行の先頭で始まらない見出しは、前の空白が削除されて見出しとして認識されるようにします。',
     },
     // insert-yaml-attributes.ts
     'insert-yaml-attributes': {
-      'name': 'Insert YAML attributes',
-      'description': 'Inserts the given YAML attributes into the YAML frontmatter. Put each attribute on a single line.',
+      'name': 'YAML属性の挿入',
+      'description': '指定されたYAML属性をYAML front-matter に挿入します。各属性は単一行にしてください。',
       'text-to-insert': {
-        'name': 'Text to insert',
-        'description': 'Text to insert into the YAML frontmatter',
+        'name': '挿入するテキスト',
+        'description': 'YAML front-matter に挿入するテキスト',
       },
     },
     // line-break-at-document-end.ts
     'line-break-at-document-end': {
-      'name': 'Line Break at Document End',
-      'description': 'Ensures that there is exactly one line break at the end of a document if the note is not empty.',
+      'name': '文書末尾の改行',
+      'description': 'ノートが空でない場合、文書の末尾に正確に1つの改行があることを保証します。',
     },
     // move-footnotes-to-the-bottom.ts
     'move-footnotes-to-the-bottom': {
-      'name': 'Move Footnotes to the bottom',
-      'description': 'Move all footnotes to the bottom of the document and makes sure they are sorted based on the order they are referenced in the file\'s body.',
+      'name': '脚注を文書の末尾に移動',
+      'description': 'すべての脚注を文書の末尾に移動し、ファイル本文で参照される順序に基づいて並べ替えられていることを確認します。',
       'include-blank-line-between-footnotes': {
-        'name': 'Include Blank Line Between Footnotes',
-        'description': 'Includes a blank line between footnotes when enabled.',
+        'name': '脚注間の空行を含める',
+        'description': '有効にすると、脚注間に空行を含めます。',
       },
     },
     // move-math-block-indicators-to-their-own-line.ts
     'move-math-block-indicators-to-their-own-line': {
-      'name': 'Move Math Block Indicators to Their Own Line',
-      'description': 'Move all starting and ending math block indicators to their own lines using <code>Number of Dollar Signs to Indicate a Math Block</code> to determine how many dollar signs indicates a math block for single-line math.',
+      'name': '数式ブロックのインジケーターを独自の行に移動',
+      'description': '単一行の数式に対して数式ブロックを示すドル記号の数を決定するために<code>数式ブロックを示すドル記号の数</code>を使用して、すべての開始および終了の数式ブロックインジケーターを独自の行に移動します。',
     },
     // move-tags-to-yaml.ts
     'move-tags-to-yaml': {
-      'name': 'Move Tags to YAML',
-      'description': 'Move all tags to YAML frontmatter of the document.',
+      'name': 'タグをYAMLに移動',
+      'description': 'すべてのタグを文書のYAML front-matter に移動します。',
       'how-to-handle-existing-tags': {
-        'name': 'Body tag operation',
-        'description': 'What to do with non-ignored tags in the body of the file once they have been moved to the frontmatter',
+        'name': '本文のタグ操作',
+        'description': 'タグがYAML front-matter に移動された後、ファイル本文内の無視されていないタグに対して何をするか',
       },
       'tags-to-ignore': {
-        'name': 'Tags to ignore',
-        'description': 'The tags that will not be moved to the tags array or removed from the body content if <code>Remove the hashtag from tags in content body</code> is enabled. Each tag should be on a new line and without the <code>#</code>. <b>Make sure not to include the hashtag in the tag name.</b>',
+        'name': '無視するタグ',
+        'description': '<code>Remove the hashtag from tags in content body</code>が有効になっている場合に、タグ配列に移動されないか、本文から削除されないタグです。各タグは新しい行に記述し、<code>#</code>を含めないでください。<b>タグ名にハッシュタグを含めないようにしてください。</b>',
       },
     },
     // no-bare-urls.ts
     'no-bare-urls': {
-      'name': 'No Bare URLs',
-      'description': 'Encloses bare URLs with angle brackets except when enclosed in back ticks, square braces, or single or double quotes.',
+      'name': 'bare URLを許可しない',
+      'description': 'バッククォート、角括弧、またはシングルクォートやダブルクォートで囲まれていないbare URLを山括弧で囲みます。',
       'no-bare-uris': {
-        'name': 'No Bare URIs',
-        'description': 'Attempts to enclose bare URIs with angle brackets except when enclosed in back ticks, square braces, or single or double quotes.',
+        'name': 'bare URIを許可しない',
+        'description': 'バッククォート、角括弧、またはシングルクォートやダブルクォートで囲まれていないbare URIを山括弧で囲もうとします。',
       },
     },
     // ordered-list-style.ts
     'ordered-list-style': {
-      'name': 'Ordered List Style',
-      'description': 'Makes sure that ordered lists follow the style specified. <b>Note: that 2 spaces or 1 tab is considered to be an indentation level.</b>',
+      'name': '順序付きリストのスタイル',
+      'description': '順序付きリストが指定されたスタイルに従っていることを確認します。<b>注：2つのスペースまたは1つのタブはインデントレベルと見な</b>',
       'number-style': {
-        'name': 'Number Style',
-        'description': 'The number style used in ordered list indicators',
+        'name': '数字のスタイル',
+        'description': '順序付きリストのインジケーターで使用される数字のスタイル',
       },
       'list-end-style': {
-        'name': 'Ordered List Indicator End Style',
-        'description': 'The ending character of an ordered list indicator',
+        'name': '順序付きリストインジケーターの終了スタイル',
+        'description': '順序付きリストインジケーターの終了文字',
       },
       'preserve-start': {
-        'name': 'Preserve Starting Number',
-        'description': 'Whether to preserve the starting number of an ordered list. This can be used to have an ordered list that has content in between the ordered list items.',
+        'name': '開始番号を保持',
+        'description': '順序付きリストの開始番号を保持するかどうか。これにより、順序付きリストの項目間にコンテンツがあるリストを作成できます。',
       },
     },
     // paragraph-blank-lines.ts
     'paragraph-blank-lines': {
-      'name': 'Paragraph blank lines',
-      'description': 'All paragraphs should have exactly one blank line both before and after.',
+      'name': '段落の空行',
+      'description': 'すべての段落の前後に正確に1行の空白行があることを確認します。',
     },
     // prevent-double-checklist-indicator-on-paste.ts
     'prevent-double-checklist-indicator-on-paste': {
-      'name': 'Prevent Double Checklist Indicator on Paste',
-      'description': 'Removes starting checklist indicator from the text to paste if the line the cursor is on in the file has a checklist indicator',
+      'name': '貼り付け時の二重チェックリストインジケーターを防止',
+      'description': 'ファイル内のカーソルがある行にチェックリストインジケーターがある場合、貼り付けるテキストから開始チェックリストインジケーターを削除します。',
     },
     // prevent-double-list-item-indicator-on-paste.ts
     'prevent-double-list-item-indicator-on-paste': {
-      'name': 'Prevent Double List Item Indicator on Paste',
-      'description': 'Removes starting list indicator from the text to paste if the line the cursor is on in the file has a list indicator',
+      'name': '貼り付け時の二重リスト項目インジケーターを防止',
+      'description': 'ファイル内のカーソルがある行にリストインジケーターがある場合、貼り付けるテキストから開始リストインジケーターを削除します。',
     },
     // proper-ellipsis-on-paste.ts
     'proper-ellipsis-on-paste': {
-      'name': 'Proper Ellipsis on Paste',
-      'description': 'Replaces three consecutive dots with an ellipsis even if they have a space between them in the text to paste',
+      'name': '貼り付け時の適切な省略記号',
+      'description': '貼り付けるテキスト内の3つの連続したドットを、省略記号に置き換えます。ドットの間にスペースがあっても置き換えます。',
     },
     // proper-ellipsis.ts
     'proper-ellipsis': {
-      'name': 'Proper Ellipsis',
-      'description': 'Replaces three consecutive dots with an ellipsis.',
+      'name': '適切な省略記号',
+      'description': '3つの連続したドットを省略記号に置き換えます。',
     },
     // quote-style.ts
     'quote-style': {
-      'name': 'Quote Style',
-      'description': 'Updates the quotes in the body content to be updated to the specified single and double quote styles.',
+      'name': '引用符のスタイル',
+      'description': '本文の引用符を指定されたシングルおよびダブル引用符のスタイルに更新します。',
       'single-quote-enabled': {
-        'name': 'Enable <code>Single Quote Style</code>',
-        'description': 'Specifies that the selected single quote style should be used.',
+        'name': 'シングル引用符のスタイルを有効にする',
+        'description': '指定されたシングル引用符のスタイルを使用することを指定します。',
       },
       'single-quote-style': {
-        'name': 'Single Quote Style',
-        'description': 'The style of single quotes to use.',
+        'name': 'シングル引用符のスタイル',
+        'description': '使用するシングル引用符のスタイルです。',
       },
       'double-quote-enabled': {
-        'name': 'Enable <code>Double Quote Style</code>',
-        'description': 'Specifies that the selected double quote style should be used.',
+        'name': 'ダブル引用符のスタイルを有効にする',
+        'description': '指定されたダブル引用符のスタイルを使用することを指定します。',
       },
       'double-quote-style': {
-        'name': 'Double Quote Style',
-        'description': 'The style of double quotes to use.',
+        'name': 'ダブル引用符のスタイル',
+        'description': '使用するダブル引用符のスタイルです。',
       },
     },
     // re-index-footnotes.ts
     're-index-footnotes': {
-      'name': 'Re-Index Footnotes',
-      'description': 'Re-indexes footnote keys and footnote, based on the order of occurrence. <b>Note: This rule does <i>not</i> work if there is more than one footnote for a key.</b>',
+      'name': '脚注の再インデックス化',
+      'description': '発生順に基づいて脚注キーと脚注を再インデックス化します。<b>注：このルールは、キーに対して複数の脚注がある場合は<i>機能しません</i>。</b>',
     },
     // remove-consecutive-list-markers.ts
     'remove-consecutive-list-markers': {
-      'name': 'Remove Consecutive List Markers',
-      'description': 'Removes consecutive list markers. Useful when copy-pasting list items.',
+      'name': '連続するリストマーカーの削除',
+      'description': '連続するリストマーカーを削除します。リスト項目をコピー＆ペーストする際に便利です。',
     },
     // remove-empty-lines-between-list-markers-and-checklists.ts
     'remove-empty-lines-between-list-markers-and-checklists': {
-      'name': 'Remove Empty Lines Between List Markers and Checklists',
-      'description': 'There should not be any empty lines between list markers and checklists.',
+      'name': 'リストマーカーとチェックリストの間の空行を削除',
+      'description': 'リストマーカーとチェックリストの間に空行がないことを確認します。',
     },
     // remove-empty-list-markers.ts
     'remove-empty-list-markers': {
-      'name': 'Remove Empty List Markers',
-      'description': 'Removes empty list markers, i.e. list items without content.',
+      'name': '空のリストマーカーを削除',
+      'description': '内容のないリスト項目、すなわち空のリストマーカーを削除します。',
     },
     // empty-line-around-horizontal-rules.ts
     'empty-line-around-horizontal-rules': {
-      'name': 'Empty Line Around Horizontal Rules',
-      'description': 'Ensures that there is an empty line around horizontal rules unless they start or end a document.',
+      'name': '水平ルールの周りの空行',
+      'description': 'ドキュメントの開始または終了でない限り、水平ルールの周りに空行があることを確認します。',
     },
     // remove-hyphenated-line-breaks.ts
     'remove-hyphenated-line-breaks': {
-      'name': 'Remove Hyphenated Line Breaks',
-      'description': 'Removes hyphenated line breaks. Useful when pasting text from textbooks.',
+      'name': 'ハイフンで区切られた改行を削除',
+      'description': '教科書からテキストを貼り付ける際に便利な、ハイフンで区切られた改行を削除します。',
     },
     // remove-hyphens-on-paste.ts
     'remove-hyphens-on-paste': {
-      'name': 'Remove Hyphens on Paste',
-      'description': 'Removes hyphens from the text to paste',
+      'name': '貼り付け時のハイフンを削除',
+      'description': '貼り付けるテキストからハイフンを削除します。',
     },
     // remove-leading-or-trailing-whitespace-on-paste.ts
     'remove-leading-or-trailing-whitespace-on-paste': {
-      'name': 'Remove Leading or Trailing Whitespace on Paste',
-      'description': 'Removes any leading non-tab whitespace and all trailing whitespace for the text to paste',
+      'name': '貼り付け時の先頭または末尾の空白を削除',
+      'description': '貼り付けるテキストの先頭のタブ以外の空白と末尾の空白をすべて削除します。',
     },
     // remove-leftover-footnotes-from-quote-on-paste.ts
     'remove-leftover-footnotes-from-quote-on-paste': {
-      'name': 'Remove Leftover Footnotes from Quote on Paste',
-      'description': 'Removes any leftover footnote references for the text to paste',
+      'name': '引用符の貼り付け時に残った脚注を削除',
+      'description': '貼り付けるテキストの残った脚注参照を削除します。',
     },
     // remove-link-spacing.ts
     'remove-link-spacing': {
-      'name': 'Remove link spacing',
-      'description': 'Removes spacing around link text.',
+      'name': 'リンクの間隔を削除',
+      'description': 'リンクテキストの周りの間隔を削除します。',
     },
     // remove-multiple-blank-lines-on-paste.ts
     'remove-multiple-blank-lines-on-paste': {
-      'name': 'Remove Multiple Blank Lines on Paste',
-      'description': 'Condenses multiple blank lines down into one blank line for the text to paste',
+      'name': '貼り付け時の複数の空行を削除',
+      'description': '貼り付けるテキストの複数の空行を1つの空行にまとめます。',
     },
     // remove-multiple-spaces.ts
     'remove-multiple-spaces': {
-      'name': 'Remove Multiple Spaces',
-      'description': 'Removes two or more consecutive spaces. Ignores spaces at the beginning and ending of the line. ',
+      'name': '複数のスペースを削除',
+      'description': '2つ以上連続するスペースを削除します。行の先頭と末尾のスペースは無視します。',
     },
     // remove-space-around-characters.ts
     'remove-space-around-characters': {
-      'name': 'Remove Space around Characters',
-      'description': 'Ensures that certain characters are not surrounded by whitespace (either single spaces or a tab). <b>Note: this may causes issues with markdown format in some cases.</b>',
+      'name': '文字の周りの空白を削除',
+      'description': '特定の文字が空白（単一スペースまたはタブ）で囲まれていないことを確認します。<b>注：これにより、場合によってはマークダウン形式に問題が生じることがあります。</b>',
       'include-fullwidth-forms': {
-        'name': 'Include Fullwidth Forms',
-        'description': 'Include <a href="https://en.wikipedia.org/wiki/Halfwidth_and_Fullwidth_Forms_(Unicode_block)">Fullwidth Forms Unicode block</a>',
+        'name': '全角文字を含める',
+        'description': 'ユニコードブロック<a href="https://en.wikipedia.org/wiki/Halfwidth_and_Fullwidth_Forms_(Unicode_block)">全角文字（Fullwidth Forms）</a>を含める',
       },
       'include-cjk-symbols-and-punctuation': {
-        'name': 'Include CJK Symbols and Punctuation',
-        'description': 'Include <a href="https://en.wikipedia.org/wiki/CJK_Symbols_and_Punctuation">CJK Symbols and Punctuation Unicode block</a>',
+        'name': 'CJK記号および句読点を含める',
+        'description': 'ユニコードブロック<a href="https://en.wikipedia.org/wiki/CJK_Symbols_and_Punctuation">CJK記号および句読点（CJK Symbols and Punctuation）</a>を含める',
       },
       'include-dashes': {
-        'name': 'Include Dashes',
-        'description': 'Include en dash (–) and em dash (—)',
+        'name': 'ダッシュを含める',
+        'description': 'enダッシュ（–）およびemダッシュ（—）を含める',
       },
       'other-symbols': {
-        'name': 'Other symbols',
-        'description': 'Other symbols to include',
+        'name': 'その他の記号',
+        'description': '含めるその他の記号（スペースまたはタブで囲まれるべきでない記号）のリスト',
       },
     },
     // remove-space-before-or-after-characters.ts
     'remove-space-before-or-after-characters': {
-      'name': 'Remove Space Before or After Characters',
-      'description': 'Removes space before the specified characters and after the specified characters. <b>Note: this may causes issues with markdown format in some cases.</b>',
+      'name': '文字の前後の空白を削除',
+      'description': '指定された文字の前後の空白を削除します。<b>注：これにより、場合によってはマークダウン形式に問題が生じることがあります。</b>',
       'characters-to-remove-space-before': {
-        'name': 'Remove Space Before Characters',
-        'description': 'Removes space before the specified characters. <b>Note: using <code>{</code> or <code>}</code> in the list of characters will unexpectedly affect files as it is used in the ignore syntax behind the scenes.</b>',
+        'name': '文字の前の空白を削除',
+        'description': '指定された文字の前の空白を削除します。<b>注：リスト内で<code>{</code>または<code>}</code>を使用すると、背後で無視構文に使用されるため、ファイルに予期しない影響を与える可能性があります。</b>',
       },
       'characters-to-remove-space-after': {
-        'name': 'Remove Space After Characters',
-        'description': 'Removes space after the specified characters. <b>>Note: using <code>{</code> or <code>}</code> in the list of characters will unexpectedly affect files as it is used in the ignore syntax behind the scenes.</b>',
+        'name': '文字の後の空白を削除',
+        'description': '指定された文字の後の空白を削除します。<b>注：リスト内で<code>{</code>または<code>}</code>を使用すると、背後で無視構文に使用されるため、ファイルに予期しない影響を与える可能性があります。</b>',
       },
     },
     // remove-trailing-punctuation-in-heading.ts
     'remove-trailing-punctuation-in-heading': {
-      'name': 'Remove Trailing Punctuation in Heading',
-      'description': 'Removes the specified punctuation from the end of headings making sure to ignore the semicolon at the end of <a href="https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references">HTML entity references</a>.',
+      'name': '見出しの末尾の句読点を削除',
+      'description': '見出しの末尾から指定された句読点を削除します。<a href="https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references">HTMLエンティティ参照</a>の末尾のセミコロンは無視されます。',
       'punctuation-to-remove': {
-        'name': 'Trailing Punctuation',
-        'description': 'The trailing punctuation to remove from the headings in the file.',
+        'name': '末尾の句読点',
+        'description': 'ファイル内の見出しから削除する末尾の句読点。各句読点は新しい行に記述します。',
       },
     },
     // remove-yaml-keys.ts
     'remove-yaml-keys': {
-      'name': 'Remove YAML Keys',
-      'description': 'Removes the YAML keys specified',
+      'name': 'YAMLキーを削除',
+      'description': '指定されたYAMLキーを削除します',
       'yaml-keys-to-remove': {
-        'name': 'YAML Keys to Remove',
-        'description': 'The YAML keys to remove from the YAML frontmatter with or without colons',
+        'name': '削除するYAMLキー',
+        'description': 'コロンの有無にかかわらず、YAML front-matter から削除するYAMLキー',
       },
     },
     // sort-yaml-array-values.ts
     'sort-yaml-array-values': {
-      'name': 'Sort YAML Array Values',
-      'description': 'Sorts YAML array values based on the specified sort order.',
+      'name': 'YAML配列の値をソート',
+      'description': '指定されたソート順に基づいてYAML配列の値をソートします。',
       'sort-alias-key': {
-        'name': 'Sort YAML aliases section',
-        'description': 'Turns on sorting aliases.',
+        'name': 'YAMLエイリアスセクションをソート',
+        'description': 'エイリアスのソートを有効にします。',
       },
       'sort-tag-key': {
-        'name': 'Sort YAML tags section',
-        'description': 'Turns on sorting tags.',
+        'name': 'YAMLタグセクションをソート',
+        'description': 'タグのソートを有効にします。',
       },
       'sort-array-keys': {
-        'name': 'Sort YAML array sections',
-        'description': 'Turns on sorting values for regular YAML arrays',
+        'name': 'YAML配列セクションをソート',
+        'description': '通常のYAML配列の値のソートを有効にします。',
       },
       'ignore-keys': {
-        'name': 'YAML Keys to Ignore',
-        'description': 'A list of YAML keys without the ending colon on their own lines that are not meant to have their values sorted.',
+        'name': '無視するYAMLキー',
+        'description': '値のソートを行わないYAMLキーのリスト。各キーはコロンなしで独立した行に記述します。',
       },
       'sort-order': {
-        'name': 'Sort Order',
-        'description': 'The way to sort the YAML array values.',
+        'name': 'ソート順',
+        'description': 'YAML配列の値をソートする方法。',
       },
     },
     // space-after-list-markers.ts
     'space-after-list-markers': {
-      'name': 'Space after list markers',
-      'description': 'There should be a single space after list markers and checkboxes.',
+      'name': 'リストマーカーの後のスペース',
+      'description': 'リストマーカーとチェックボックスの後には単一のスペースが必要です。',
     },
     // space-between-chinese-japanese-or-korean-and-english-or-numbers.ts
     'space-between-chinese-japanese-or-korean-and-english-or-numbers': {
-      'name': 'Space between Chinese Japanese or Korean and English or numbers',
-      'description': 'Ensures that Chinese, Japanese, or Korean and English or numbers are separated by a single space. Follows these <a href="https://github.com/sparanoid/chinese-copywriting-guidelines">guidelines</a>',
+      'name': '中国語、日本語、韓国語と英語または数字の間のスペース',
+      'description': '中国語、日本語、韓国語と英語または数字の間に単一のスペースがあることを確認します。これらの<a href="https://github.com/sparanoid/chinese-copywriting-guidelines">ガイドライン</a>に従います。',
       'english-symbols-punctuation-before': {
-        'name': 'English Punctuations and Symbols Before CJK',
-        'description': 'The list of non-letter punctuation and symbols to consider to be from English when found before Chinese, Japanese, or Korean characters. <b>Note: "*" is always considered to be English and is necessary for handling some markdown syntaxes properly.</b>',
+        'name': 'CJKの前の英語の句読点と記号',
+        'description': '中国語、日本語、韓国語の文字の前にある場合に英語と見なされる非文字の句読点と記号のリスト。<b>注：「*」は常に英語と見なされ、一部のマークダウン構文を適切に処理するために必要です。</b>',
       },
       'english-symbols-punctuation-after': {
-        'name': 'English Punctuations and Symbols After CJK',
-        'description': 'The list of non-letter punctuation and symbols to consider to be from English when found after Chinese, Japanese, or Korean characters. <b>Note: "*" is always considered to be English and is necessary for handling some markdown syntaxes properly.</b>',
+        'name': 'CJKの後の英語の句読点と記号',
+        'description': '中国語、日本語、韓国語の文字の後にある場合に英語と見なされる非文字の句読点と記号のリスト。<b>注：「*」は常に英語と見なされ、一部のマークダウン構文を適切に処理するために必要です。</b>',
       },
     },
     // strong-style.ts
     'strong-style': {
-      'name': 'Strong Style',
-      'description': 'Makes sure the strong style is consistent.',
+      'name': '強調スタイル',
+      'description': '強調スタイルが一貫していることを確認します。',
       'style': {
-        'name': 'Style',
-        'description': 'The style used to denote strong/bolded content',
+        'name': 'スタイル',
+        'description': '強調/太字の内容を示すために使用されるスタイル',
       },
     },
     // trailing-spaces.ts
     'trailing-spaces': {
-      'name': 'Trailing spaces',
-      'description': 'Removes extra spaces after every line.',
+      'name': '行末の空白',
+      'description': '各行の余分な空白を削除します。',
       'two-space-line-break': {
-        'name': 'Two Space Linebreak',
-        'description': 'Ignore two spaces followed by a line break ("Two Space Rule").',
+        'name': '二重スペースの改行',
+        'description': '改行に続く二重スペース（「二重スペースルール」）を無視します。',
       },
     },
     // two-spaces-between-lines-with-content.ts
     'two-spaces-between-lines-with-content': {
-      'name': 'Line Break Between Lines with Content',
-      'description': 'Makes sure that the specified line break is added to the ends of lines with content continued on the next line for paragraphs, blockquotes, and list items',
+      'name': '内容のある行間の改行',
+      'description': '段落、引用、リスト項目の次の行に内容が続く行の末尾に指定された改行が追加されていることを確認します。',
       'line-break-indicator': {
-        'name': 'Line Break Indicator',
-        'description': 'The line break indicator to use.',
+        'name': '改行インジケーター',
+        'description': '使用する改行インジケーター。',
       },
     },
     // unordered-list-style.ts
     'unordered-list-style': {
-      'name': 'Unordered List Style',
-      'description': 'Makes sure that unordered lists follow the style specified.',
+      'name': '箇条書きリストのスタイル',
+      'description': '箇条書きリストが指定されたスタイルに従っていることを確認します。',
       'list-style': {
-        'name': 'List item style',
-        'description': 'The list item style to use in unordered lists',
+        'name': 'リスト項目のスタイル',
+        'description': '箇条書きリストで使用するリスト項目のスタイル',
       },
     },
     // yaml-key-sort.ts
     'yaml-key-sort': {
-      'name': 'YAML Key Sort',
-      'description': 'Sorts the YAML keys based on the order and priority specified. <b>Note: may remove blank lines as well. Only works on non-nested keys.</b>',
+      'name': 'YAMLキーのソート',
+      'description': '指定された順序と優先順位に基づいてYAMLキーをソートします。<b>注：空行も削除する場合があります。ネストされていないキーにのみ機能します。</b>',
       'yaml-key-priority-sort-order': {
-        'name': 'YAML Key Priority Sort Order',
-        'description': 'The order in which to sort keys with one on each line where it sorts in the order found in the list',
+        'name': 'YAMLキー優先ソート順',
+        'description': 'リストに見つかった順序でソートされる各行に1つずつキーを並べる順序',
       },
       'priority-keys-at-start-of-yaml': {
-        'name': 'Priority Keys at Start of YAML',
-        'description': 'YAML Key Priority Sort Order is placed at the start of the YAML frontmatter',
+        'name': 'YAMLの先頭にある優先キー',
+        'description': 'YAMLキー優先ソート順はYAML front-matter の先頭に配置されます',
       },
       'yaml-sort-order-for-other-keys': {
-        'name': 'YAML Sort Order for Other Keys',
-        'description': 'The way in which to sort the keys that are not found in the YAML Key Priority Sort Order text area',
+        'name': 'その他のキーのYAMLソート順',
+        'description': 'YAMLキー優先ソート順のテキストエリアに見つからないキーをソートする方法',
       },
     },
     // yaml-timestamp.ts
     'yaml-timestamp': {
-      'name': 'YAML Timestamp',
-      'description': 'Keep track of the date the file was last edited in the YAML front matter. Gets dates from file metadata.',
+      'name': 'YAMLタイムスタンプ',
+      'description': 'YAML front-matter でファイルが最後に編集された日付を追跡します。ファイルのメタデータから日付を取得します。',
       'date-created': {
-        'name': 'Date Created',
-        'description': 'Insert the file creation date',
+        'name': '作成日',
+        'description': 'ファイルの作成日を挿入します。',
       },
       'date-created-key': {
-        'name': 'Date Created Key',
-        'description': 'Which YAML key to use for creation date',
+        'name': '作成日キー',
+        'description': '作成日に使用するYAMLキー',
       },
       'date-created-source-of-truth': {
-        'name': 'Date Created Source of Truth',
-        'description': 'Specifies where to get the date created value from if it is already present in the frontmatter.',
+        'name': '作成日の真実の情報源',
+        'description': '作成日がすでにfront-matter に存在する場合に、作成日値を取得する場所を指定します。',
       },
       'date-modified-source-of-truth': {
-        'name': 'Date Modified Source of Truth',
-        'description': 'Specifies what way should be used to determine when the date modified should be updated if it is already present in the frontmatter.',
+        'name': '更新日の真実の情報源',
+        'description': '更新日がすでにfront-matter に存在する場合に、更新日値を取得する場所を指定します。',
       },
       'date-modified': {
-        'name': 'Date Modified',
-        'description': 'Insert the date the file was last modified',
+        'name': '更新日',
+        'description': 'ファイルの最終更新日を挿入します。',
       },
       'date-modified-key': {
-        'name': 'Date Modified Key',
-        'description': 'Which YAML key to use for modification date',
+        'name': '更新日キー',
+        'description': '更新日に使用するYAMLキー',
       },
       'format': {
-        'name': 'Format',
-        'description': 'Moment date format to use (see <a href="https://momentjscom.readthedocs.io/en/latest/moment/04-displaying/01-format/">Moment format options</a>)',
+        'name': 'フォーマット',
+        'description': '使用するMoment日付フォーマット（<a href="https://momentjscom.readthedocs.io/en/latest/moment/04-displaying/01-format/">Momentフォーマットオプション</a>を参照）',
       },
       'convert-to-utc': {
-        'name': 'Convert Local Time to UTC',
-        'description': 'Uses UTC equivalent for saved dates instead of local time',
+        'name': 'ローカル時間をUTCに変換',
+        'description': '保存された日付にローカル時間の代わりにUTCの同等物を使用します',
       },
       'update-on-file-contents-updated': {
-        'name': 'Update YAML Timestamp on File Contents Update',
-        'description': 'When the currently active note is modified, <code>YAML Timestamp</code> is run on the note. This should update the modified note timestamp if it is more than 5 seconds off from the current value.',
+        'name': 'ファイル内容の更新時にYAMLタイムスタンプを更新',
+        'description': '現在アクティブなノートが変更されると、<code>YAML Timestamp</code>がノートで実行されます。これにより、現在の値から5秒以上ずれている場合は、変更されたノートのタイムスタンプが更新されるはずです。',
       },
     },
     // yaml-title-alias.ts
     'yaml-title-alias': {
-      'name': 'YAML Title Alias',
-      'description': 'Inserts or updates the title of the file into the YAML frontmatter\'s aliases section. Gets the title from the first H1 or filename.',
+      'name': 'YAMLタイトルエイリアス',
+      'description': 'ファイルのタイトルをYAML front-matter のエイリアスセクションに挿入または更新します。タイトルは最初のH1またはファイル名から取得します。',
       'preserve-existing-alias-section-style': {
-        'name': 'Preserve existing aliases section style',
-        'description': 'If set, the <code>YAML aliases section style</code> setting applies only to the newly created sections',
+        'name': '既存のエイリアスセクションのスタイルを保持',
+        'description': '設定されている場合、<code>YAML aliases section style</code>の設定は新しく作成されたセクションにのみ適用されます',
       },
       'keep-alias-that-matches-the-filename': {
-        'name': 'Keep alias that matches the filename',
-        'description': 'Such aliases are usually redundant',
+        'name': 'ファイル名と一致するエイリアスを保持',
+        'description': 'そのようなエイリアスは通常冗長です',
       },
       'use-yaml-key-to-keep-track-of-old-filename-or-heading': {
-        'name': 'Use the YAML key specified by <code>Alias Helper Key</code> to help with filename and heading changes',
-        'description': 'If set, when the first H1 heading changes or filename if first H1 is not present changes, then the old alias stored in this key will be replaced with the new value instead of just inserting a new entry in the aliases array',
+        'name': '<code>Alias Helper Key</code>で指定されたYAMLキーを使用して、ファイル名と見出しの変更を支援します',
+        'description': '設定されている場合、最初のH1見出しが変更された場合、または最初のH1が存在しない場合はファイル名が変更された場合、このキーに保存されている古いエイリアスは、新しい値に置き換えられます。エイリアス配列に新しいエントリを挿入するだけではありません。',
       },
       'alias-helper-key': {
         'name': 'Alias Helper Key',
-        'description': 'The key to use to help keep track of what the last file name or heading was that was stored in the frontmatter by this rule.',
+        'description': 'このルールによってfront-matter に保存された最後のファイル名または見出しを追跡するために使用するキー。',
       },
     },
     // yaml-title.ts
     'yaml-title': {
-      'name': 'YAML Title',
-      'description': 'Inserts the title of the file into the YAML frontmatter. Gets the title based on the selected mode.',
+      'name': 'YAMLタイトル',
+      'description': 'ファイルのタイトルをYAML front-matter に挿入します。選択したモードに基づいてタイトルを取得します。',
       'title-key': {
-        'name': 'Title Key',
-        'description': 'Which YAML key to use for title',
+        'name': 'タイトルキー',
+        'description': 'タイトルに使用するYAMLキー',
       },
       'mode': {
-        'name': 'Mode',
-        'description': 'The method to use to get the title',
+        'name': 'モード',
+        'description': 'タイトルを取得するために使用する方法',
       },
     },
   },
 
   // These are the string values in the UI for enum values and thus they do not follow the key format as used above
   'enums': {
-    'Title Case': 'Title Case',
-    'ALL CAPS': 'ALL CAPS',
-    'First letter': 'First letter',
+    'Title Case': 'タイトルケース',
+    'ALL CAPS': 'すべて大文字',
+    'First letter': '最初の文字',
     '.': '.', // leave as is
     ')': ')', // leave as is
-    'ERROR': 'error',
-    'TRACE': 'trace',
-    'DEBUG': 'debug',
-    'INFO': 'info',
-    'WARN': 'warn',
-    'SILENT': 'silent',
-    'ascending': 'ascending',
-    'lazy': 'lazy',
-    'preserve': 'preserve',
-    'Nothing': 'Nothing',
-    'Remove hashtag': 'Remove hashtag',
-    'Remove whole tag': 'Remove whole tag',
-    'asterisk': 'asterisk',
-    'underscore': 'underscore',
-    'consistent': 'consistent',
+    'ERROR': 'エラー',
+    'TRACE': 'トレース',
+    'DEBUG': 'デバッグ',
+    'INFO': '情報',
+    'WARN': '警告',
+    'SILENT': 'サイレント',
+    'ascending': '昇順',
+    'lazy': '遅延',
+    'preserve': '保持',
+    'Nothing': 'なし',
+    'Remove hashtag': 'ハッシュタグを削除',
+    'Remove whole tag': 'タグ全体を削除',
+    'asterisk': 'アスタリスク',
+    'underscore': 'アンダースコア',
+    'consistent': '一貫性',
     '-': '-', // leave as is
     '*': '*', // leave as is
     '+': '+', // leave as is
-    'space': 'space',
-    'no space': 'no space',
-    'None': 'None',
-    'Ascending Alphabetical': 'Ascending Alphabetical',
-    'Descending Alphabetical': 'Descending Alphabetical',
+    'space': 'スペース',
+    'no space': 'スペースなし',
+    'None': 'なし',
+    'Ascending Alphabetical': 'アルファベットの昇順',
+    'Descending Alphabetical': 'アルファベットの降順',
     // yaml.ts
-    'multi-line': 'multi-line',
-    'single-line': 'single-line',
-    'single string to single-line': 'single string to single-line',
-    'single string to multi-line': 'single string to multi-line',
-    'single string comma delimited': 'single string comma delimited',
-    'single string space delimited': 'single string space delimited',
-    'single-line space delimited': 'single-line space delimited',
+    'multi-line': '複数行',
+    'single-line': '単一行',
+    'single string to single-line': '単一文字列から単一行へ',
+    'single string to multi-line': '単一文字列から複数行へ',
+    'single string comma delimited': '単一文字列カンマ区切り',
+    'single string space delimited': '単一文字列スペース区切り',
+    'single-line space delimited': '単一行スペース区切り',
     // yaml-title.ts
-    'first-h1': 'First H1',
-    'first-h1-or-filename-if-h1-missing': 'First H1 or Filename if H1 is Missing',
-    'filename': 'Filename',
+    'first-h1': '最初のH1',
+    'first-h1-or-filename-if-h1-missing': '最初のH1 または H1がない場合はファイル名',
+    'filename': 'ファイル名',
     // settings-data.ts
-    'never': 'Never',
-    'after 5 seconds': 'After 5 seconds',
-    'after 10 seconds': 'After 10 seconds',
-    'after 15 seconds': 'After 15 seconds',
-    'after 30 seconds': 'After 30 seconds',
-    'after 1 minute': 'After 1 minute',
+    'never': 'なし',
+    'after 5 seconds': '5秒後',
+    'after 10 seconds': '10秒後',
+    'after 15 seconds': '15秒後',
+    'after 30 seconds': '30秒後',
+    'after 1 minute': '1分後',
     // yaml-timestamp.ts
-    'file system': 'File system',
+    'file system': 'ファイルシステム',
     'frontmatter': 'YAML frontmatter',
-    'user or Linter edits': 'Changes in Obsidian',
+    'user or Linter edits': 'Obsidianでの変更',
     // quote-style.ts
     '\'\'': '\'\'', // leave as is
     '‘’': '‘’', // leave as is
