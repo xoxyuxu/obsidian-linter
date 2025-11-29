@@ -13,7 +13,7 @@ export default {
       'name': 'Vault内のすべてのファイルをLintする',
       'error-message': 'ファイル内のすべてのファイルのLintエラー',
       'success-message': 'すべてのファイルをLintしました',
-      'errors-message-singular': 'すべてのファイルをLintし、2つのエラーがありました。',
+      'errors-message-singular': 'すべてのファイルをLintし、1つのエラーがありました。',
       'errors-message-plural': 'すべてのファイルをLintし、{NUM}個のエラーがありました。',
       'start-message': 'これにより、すべてのファイルが編集され、エラーが発生する可能性があります。',
       'submit-button-text': 'すべてLintする',
@@ -63,9 +63,9 @@ export default {
     'paste-link-warning': 'クリップボードの内容がリンクであるため、貼り付けのLintを中止しました。これにより、貼り付けを変更する他のプラグインとの競合を回避します。',
     'see-console': '詳細はコンソールを参照してください。',
     'unknown-error': 'Lint中に不明なエラーが発生しました。',
-    'moment-locale-not-found': 'Moment.jsのロケールを{MOMENT_LOCALE}に切り替えようとしましたが、現在のロケールは{CURRENT_LOCALE}です。',
+    'moment-locale-not-found': 'Moment.jsのロケールを {MOMENT_LOCALE} に切り替えようとしましたが、現在のロケールは {CURRENT_LOCALE} です。',
     'file-change-lint-message-start': 'Lintされました',
-    'custom-command-callback-warning': 'P統合テストのためにのみカスタムコマンドコールバックを設定してください。',
+    'custom-command-callback-warning': '統合テストのためにのみカスタムコマンドコールバックを設定してください。',
 
     // rules-runner.ts
     'pre-rules': '基本ルールの前のルール',
@@ -90,11 +90,11 @@ export default {
     'invalid-date-format-error': `作成日付の形式 '{DATE}' を解析または判別できなかったため、作成日付は '{FILE_NAME}' にそのまま残されました`,
 
     // yaml.ts
-    'invalid-delimiter-error-message': '区切り文字は1文字のみ許可されています',
+    'invalid-delimiter-error-message': '区切り文字は 1文字のみ許可されています',
 
     // mdast.ts
     'missing-footnote-error-message': `脚注 '{FOOTNOTE}' には対応する脚注参照が脚注内容の前に存在しないため、処理できません。すべての脚注に脚注内容の前に対応する参照があることを確認してください。`,
-    'too-many-footnotes-error-message': `脚注キー '{FOOTNOTE_KEY}' に複数の脚注が参照されています。脚注を更新して、脚注キーごとに1つの脚注のみが存在するようにしてください。`,
+    'too-many-footnotes-error-message': `脚注キー '{FOOTNOTE_KEY}' に複数の脚注が参照されています。脚注を更新して、脚注キーごとに 1つの脚注のみが存在するようにしてください。`,
 
     // rules.ts
     'wrapper-yaml-error': 'YAMLエラー: {ERROR_MESSAGE}',
@@ -105,7 +105,7 @@ export default {
     'empty-clipboard': 'クリップボードに内容がありません。',
     'characters-added': '文字が追加されました',
     'characters-removed': '文字が削除されました',
-    'copy-to-clipboard-failed': 'テキストのクリップボードへのコピーに失敗しました: ',
+    'copy-to-clipboard-failed': 'クリップボードへのテキストのコピーに失敗しました: ',
   },
 
   // rule-alias-suggester.ts
@@ -132,7 +132,7 @@ export default {
   // parse-results-modal.ts
   'parse-results-heading-text': 'カスタム解析値',
   'file-parse-description-text': '{FILE}で見つかったカスタム置換のリストは以下の通りです。',
-  'no-parsed-values-found-text': '{FILE}でカスタム置換は見つかりませんでした。{FILE}内のカスタム置換を含むすべてのテーブルが2列のみで、すべての行がパイプ（例：|）で始まり終わっていることを確認してください。',
+  'no-parsed-values-found-text': '{FILE}にカスタム置換は見つかりませんでした。{FILE}内のカスタム置換を含むすべてのテーブルが2列のみで、すべての行がパイプ（例：|）で始まり、終わっていることを確認してください。',
   'find-header-text': '検索する単語',
   'replace-header-text': '置換する単語',
   'close-button-text': '閉じる',
@@ -146,7 +146,7 @@ export default {
       'heading': '見出し',
       'content': '内容',
       'footnote': '脚注',
-      'spacing': '間隔',
+      'spacing': 'スペース',
       'paste': '貼り付け',
       'debug': 'デバッグ',
     },
@@ -155,7 +155,7 @@ export default {
     'general': {
       // general-tab.ts
       'lint-on-save': {
-        'name': '保存時にLint',
+        'name': '保存時にLint実行',
         'description': '手動で保存したときにファイルをLintする（<code>Ctrl + S</code>が押されたときや、vimキーバインドを使用しているときに<code>:w</code>が実行されたとき）',
       },
       'display-message': {
@@ -167,23 +167,23 @@ export default {
         'description': '有効にすると、実際に変更がない場合はメッセージが表示されません。',
       },
       'lint-on-file-change': {
-        'name': 'フォーカスされたファイルの変更時にLint',
+        'name': 'フォーカスされたファイルの変更時にLintする',
         'description': 'ファイルが閉じられたり、新しいファイルに切り替えられたりしたときに、前のファイルがLintされます。',
       },
       'display-lint-on-file-change-message': {
         'name': 'フォーカスされたファイルの変更時にLintメッセージを表示',
-        'description': 'フォーカスされたファイルの変更時にLintが発生したときにメッセージを表示します',
+        'description': '"フォーカスされたファイルの変更時にLintした"ときにメッセージを表示します',
       },
       'folders-to-ignore': {
         'name': '無視するフォルダ',
-        'description': 'すべてのファイルをLintするときや保存時にLintするときに無視するフォルダ。',
+        'description': 'すべてのファイルをLintするときや、保存時にLintするときに無視するフォルダ。',
         'folder-search-placeholder-text': 'フォルダ名',
         'add-input-button-text': '無視するフォルダを追加',
         'delete-tooltip': '削除',
       },
       'files-to-ignore': {
         'name': '無視するファイル',
-        'description': 'すべてのファイルをLintするときや保存時にLintするときに無視するファイル。',
+        'description': 'すべてのファイルをLintするときや、保存時にLintするときに無視するファイル。',
         'file-search-placeholder-text': '無視するファイルの正規表現',
         'add-input-button-text': '無視するファイルの正規表現を追加',
         'delete-tooltip': '削除',
@@ -192,7 +192,7 @@ export default {
         'warning': '正規表現を知らない場合は注意して使用してください。また、iOSモバイルで正規表現の後読みを使用する場合は、それをサポートするバージョンであることを確認してください。',
       },
       'override-locale': {
-        'name': 'ロケールを上書き',
+        'name': 'ロケールを上書きする',
         'description': 'デフォルトとは異なるロケールを使用したい場合に設定します',
       },
       'same-as-system-locale': 'システムと同じ ({SYS_LOCALE})',
@@ -221,19 +221,19 @@ export default {
       // debug-tab.ts
       'log-level': {
         'name': 'ログレベル',
-        'description': 'サービスによってログに記録されることが許可されるログの種類。デフォルトはERRORです。',
+        'description': 'サービスによってログに記録されることが許可されるログの種類。デフォルトは ERROR です。',
       },
       'linter-config': {
         'name': 'Linterの設定',
-        'description': '設定ページの読み込み時点でのLinterのdata.jsonの内容',
+        'description': '設定ページの読み込み時点でのLinterの data.json の内容',
       },
       'log-collection': {
-        'name': '保存時のLintおよび現在のファイルのLint時にログを収集',
-        'description': '保存時のLintおよび現在のファイルのLint時にログを収集します。これらのログはデバッグやバグ報告の作成に役立ちます。',
+        'name': '保存時のLint実行および現在のファイルのLint実行時に、ログを収集',
+        'description': '"保存時にLint実行"および現在のファイルのLint実行時にログを収集します。これらのログはデバッグやバグ報告の作成に役立ちます。',
       },
       'linter-logs': {
         'name': 'Linterログ',
-        'description': '最後の"保存時のLint"、または、最後の"現在のファイル" に実行したLintのログ（有効な場合）',
+        'description': '最後の"保存時にLint実行"、または、最後の"現在のファイル" に実行したLintのログ（有効な場合）',
       },
     },
   },
@@ -242,7 +242,7 @@ export default {
     'custom-command': {
       // custom-command-option.ts
       'name': 'カスタムコマンド',
-      'description': 'カスタムコマンドは、リンターが通常のルールを実行した後に実行されるObsidianコマンドです。これは、YAMLタイムスタンプロジックが実行される前に実行されないことを意味し、リンターの次の実行でYAMLタイムスタンプがトリガーされる可能性があります。１つのObsidianコマンドのみを選択できます。',
+      'description': 'カスタムコマンドは、Linterが通常のルールを実行した後に実行されるObsidianコマンドです。これは、YAMLタイムスタンプロジックが実行される前に実行されないことを意味し、Linterの次の実行でYAMLタイムスタンプがトリガーされる可能性があります。1つのObsidianコマンドのみを選択できます。',
       'warning': 'オプションを選択する際は、マウスを使用するか、Enterキーを押して選択してください。他の選択方法は機能しない場合があり、実際のObsidianコマンドまたは空の文字列の選択のみが保存されます。',
       'add-input-button-text': '新しいコマンドを追加',
       'command-search-placeholder-text': 'Obsidianコマンド',
@@ -253,7 +253,7 @@ export default {
     'custom-replace': {
       // custom-replace-option.ts
       'name': 'カスタム正規表現置換',
-      'description': 'カスタム正規表現置換は、検索する正規表現に一致するものを置換する値に置き換えるために使用できます。置換する値と検索する値は有効な正規表現である必要があります。',
+      'description': 'カスタム正規表現置換は、"検索する正規表現に一致するもの"を、"置換する値"に置き換えるために使用できます。"置換する値"と"検索する値"は有効な正規表現である必要があります。',
       'warning': '正規表現を知らない場合は注意して使用してください。また、iOSモバイルで正規表現の後読みを使用する場合は、それをサポートするバージョンであることを確認してください。',
       'add-input-button-text': '新しい正規表現置換を追加',
       'regex-to-find-placeholder-text': '検索する正規表現',
