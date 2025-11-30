@@ -244,6 +244,7 @@ export default {
       'name': 'カスタムコマンド',
       'description': 'カスタムコマンドは、Linterが通常のルールを実行した後に実行されるObsidianコマンドです。これは、YAMLタイムスタンプロジックが実行される前に実行されないことを意味し、Linterの次の実行でYAMLタイムスタンプがトリガーされる可能性があります。1つのObsidianコマンドのみを選択できます。',
       'warning': 'オプションを選択する際は、マウスを使用するか、Enterキーを押して選択してください。他の選択方法は機能しない場合があり、実際のObsidianコマンドまたは空の文字列の選択のみが保存されます。',
+
       'add-input-button-text': '新しいコマンドを追加',
       'command-search-placeholder-text': 'Obsidianコマンド',
       'move-up-tooltip': '上に移動',
@@ -309,11 +310,11 @@ export default {
     },
     // blockquote-style.ts
     'blockquote-style': {
-      'name': 'Blockquoteのスタイル',
-      'description': 'Blockquoteのスタイルが一貫していることを確認します。',
+      'name': 'ブロック引用のスタイル',
+      'description': 'ブロック引用のスタイルが一貫していることを確認します。',
       'style': {
         'name': 'スタイル',
-        'description': 'Blockquoteインジケーターに使用されるスタイル',
+        'description': 'ブロック引用インジケーターに使用されるスタイル',
       },
     },
     // capitalize-headings.ts
@@ -406,8 +407,8 @@ export default {
     },
     // empty-line-around-blockquotes.ts
     'empty-line-around-blockquotes': {
-      'name': '引用符の周りの空行',
-      'description': '引用符の周りに空行があることを確認します。ただし、ドキュメントの開始または終了時は除きます。<b>注：空行は引用符のネストレベルが1つ少ないか、改行文字のいずれかです。</b>',
+      'name': '引用ブロックの周りの空行',
+      'description': '引用ブロックの周りに空行があることを確認します。ただし、ドキュメントの開始または終了時は除きます。<b>注：空行は引用ブロックのネストレベルが1つ少ないか、改行文字のいずれかです。</b>',
     },
     // empty-line-around-code-fences.ts
     'empty-line-around-code-fences': {
@@ -417,7 +418,7 @@ export default {
     // empty-line-around-math-block.ts
     'empty-line-around-math-blocks': {
       'name': '数式ブロックの周りの空行',
-      'description': '<code>数式ブロックを示すドル記号の数</code>を使用して、単一行の数式の数式ブロックの周りに空行があることを確認します。',
+      'description': '"数式ブロックを示すドル記号の数"を使用して、単一行の数式の数式ブロックの周りに空行があることを確認します。',
     },
     // empty-line-around-tables.ts
     'empty-line-around-tables': {
@@ -427,7 +428,7 @@ export default {
     // escape-yaml-special-characters.ts
     'escape-yaml-special-characters': {
       'name': 'YAML特殊文字のエスケープ',
-      'description': 'YAML内のコロンの後にスペースを追加する(: )、シングルクォート(\')、ダブルクォート(")をエスケープします。',
+      'description': 'YAML内のコロンの後にスペースを追加する(:)、シングルクォート(\')、ダブルクォート(")をエスケープします。',
       'try-to-escape-single-line-arrays': {
         'name': '単一行配列のエスケープを試みる',
         'description': '配列が "[" で始まり "]" で終わり、項目が "," で区切られていると仮定して、配列値のエスケープを試みます。',
@@ -436,7 +437,7 @@ export default {
     // file-name-heading.ts
     'file-name-heading': {
       'name': 'ファイル名見出し',
-      'description': 'H1見出しが存在しない場合にファイル名をH1見出しとして挿入します。',
+      'description': 'H1見出しが存在しない場合に、ファイル名をH1見出しとして挿入します。',
     },
     // footnote-after-punctuation.ts
     'footnote-after-punctuation': {
@@ -455,15 +456,15 @@ export default {
     // format-tags-in-yaml.ts
     'format-tags-in-yaml': {
       'name': 'YAML内のタグのフォーマット',
-      'description': 'YAML front-matter 内のタグからハッシュタグを削除します。これにより、タグが無効になるのを防ぎます。',
+      'description': 'YAML front-matter 内のタグから、ハッシュタグを削除します。これにより、タグが無効になるのを防ぎます。',
     },
     // format-yaml-array.ts
     'format-yaml-array': {
       'name': 'YAML配列のフォーマット',
-      'description': '通常のYAML配列を複数行または単一行としてフォーマットできるようにし、<code>tags</code>および<code>aliases</code>はObsidian固有のYAMLフォーマットを持つことが許可されています。<b>注意：単一文字列から単一行への変換は、1つ以上のエントリが存在する場合に単一文字列のエントリから単一行配列に変わります。同様に、単一文字列から複数行への変換は複数行配列になります。</b>',
+      'description': '通常のYAML配列を複数行または単一行としてフォーマットできるようにし、<code>tags</code>および<code>aliases</code>は、Obsidian固有のYAMLフォーマットを持つことが許可されています。<b>注意：単一文字列から単一行への変換は、1つ以上のエントリが存在する場合に単一文字列のエントリから単一行配列に変わります。同様に、単一文字列から複数行への変換は複数行配列になります。</b>',
       'alias-key': {
         'name': 'YAMLエイリアスセクションのフォーマット',
-        'description': 'YAMLエイリアスセクションのフォーマットを有効にします。ルール<code>YAML Title Alias</code>と一緒にこのオプションを有効にしないでください。これらはうまく機能しないか、異なるフォーマットスタイルが選択されて予期しない結果を招く可能性があります。',
+        'description': 'YAMLエイリアスセクションのフォーマットを有効にします。ルール<code>YAMLタイトルエイリアス</code>と一緒にこのオプションを有効にしないでください。これらはうまく機能しないか、異なるフォーマットスタイルが選択されて予期しない結果を招く可能性があります。',
       },
       'tag-key': {
         'name': 'YAMLタグセクションのフォーマット',
@@ -471,7 +472,7 @@ export default {
       },
       'default-array-style': {
         'name': 'デフォルトのYAML配列セクションスタイル',
-        'description': 'YAML配列のスタイル（<code>tags</code>、<code>aliases</code>、および<code>単一行配列に強制するキーの値</code>や<code>複数行配列に強制するキーの値</code>に含まれないもの）',
+        'description': 'YAML配列のスタイル（"タグ"、"エイリアス"、および"単一行配列に強制するキーの値"や"複数行配列に強制するキーの値"に含まれないもの）',
       },
       'default-array-keys': {
         'name': 'YAML配列セクションのフォーマット',
@@ -479,11 +480,11 @@ export default {
       },
       'force-single-line-array-style': {
         'name': '単一行配列に強制するキーの値',
-        'description': '改行で区切られたキーの値のYAML配列を単一行形式に強制します（このオプションを無効にするには空のままにしてください）',
+        'description': '改行で区切られたキーの値のYAML配列を単一行形式に強制します（このオプションを無効にするには、空のままにしてください）',
       },
       'force-multi-line-array-style': {
         'name': '複数行配列に強制するキーの値',
-        'description': '改行で区切られたキーの値のYAML配列を複数行形式に強制します（このオプションを無効にするには空のままにしてください）',
+        'description': '改行で区切られたキーの値のYAML配列を複数行形式に強制します（このオプションを無効にするには、空のままにしてください）',
       },
     },
     // header-increment.ts
@@ -498,14 +499,14 @@ export default {
     // heading-blank-lines.ts
     'heading-blank-lines': {
       'name': '見出しの空白行',
-      'description': 'すべての見出しの前後に1行の空白行を入れます（見出しが文書の先頭または末尾にある場合を除く）。',
+      'description': 'すべての見出しの前後に、1行の空白行を入れます（見出しが文書の先頭または末尾にある場合を除く）。',
       'bottom': {
         'name': '下部',
-        'description': '見出しの後に1行の空白行を確保します',
+        'description': '見出しの後に、1行の空白行を確保します',
       },
       'empty-line-after-yaml': {
         'name': 'YAMLと見出しの間の空行',
-        'description': 'YAML front-matter と見出しの間の空行を保持します',
+        'description': 'YAML front-matter と、見出しの間の空行を保持します',
       },
     },
     // headings-start-line.ts
@@ -516,7 +517,7 @@ export default {
     // insert-yaml-attributes.ts
     'insert-yaml-attributes': {
       'name': 'YAML属性の挿入',
-      'description': '指定されたYAML属性をYAML front-matter に挿入します。各属性は単一行にしてください。',
+      'description': '指定されたYAML属性を YAML front-matter に挿入します。各属性は単一行にしてください。',
       'text-to-insert': {
         'name': '挿入するテキスト',
         'description': 'YAML front-matter に挿入するテキスト',
@@ -529,7 +530,7 @@ export default {
     },
     // move-footnotes-to-the-bottom.ts
     'move-footnotes-to-the-bottom': {
-      'name': '脚注を文書の末尾に移動',
+      'name': '脚注を末尾に移動',
       'description': 'すべての脚注を文書の末尾に移動し、ファイル本文で参照される順序に基づいて並べ替えられていることを確認します。',
       'include-blank-line-between-footnotes': {
         'name': '脚注間の空行を含める',
@@ -539,34 +540,34 @@ export default {
     // move-math-block-indicators-to-their-own-line.ts
     'move-math-block-indicators-to-their-own-line': {
       'name': '数式ブロックのインジケーターを独自の行に移動',
-      'description': '単一行の数式に対して数式ブロックを示すドル記号の数を決定するために<code>数式ブロックを示すドル記号の数</code>を使用して、すべての開始および終了の数式ブロックインジケーターを独自の行に移動します。',
+      'description': '単一行の数式に対して数式ブロックを示すドル記号の数を決定するために"数式ブロックを示すドル記号の数"を使用して、すべての開始および終了の数式ブロックインジケーターを独自の行に移動します。',
     },
     // move-tags-to-yaml.ts
     'move-tags-to-yaml': {
-      'name': 'タグをYAMLに移動',
-      'description': 'すべてのタグを文書のYAML front-matter に移動します。',
+      'name': 'タグを YAML に移動',
+      'description': 'すべてのタグを文書の YAML front-matter に移動します。',
       'how-to-handle-existing-tags': {
         'name': '本文のタグ操作',
-        'description': 'タグがYAML front-matter に移動された後、ファイル本文内の無視されていないタグに対して何をするか',
+        'description': 'タグが YAML front-matter に移動された後、ファイル本文内の無視されていないタグに対して何をするか',
       },
       'tags-to-ignore': {
         'name': '無視するタグ',
-        'description': '<code>Remove the hashtag from tags in content body</code>が有効になっている場合に、タグ配列に移動されないか、本文から削除されないタグです。各タグは新しい行に記述し、<code>#</code>を含めないでください。<b>タグ名にハッシュタグを含めないようにしてください。</b>',
+        'description': '"YAML内のタグのフォーマット"が有効になっている場合に、タグ配列に移動されないか、本文から削除されないタグです。各タグは新しい行に記述し、<code>#</code>を含めないでください。<b>タグ名にハッシュタグを含めないようにしてください。</b>',
       },
     },
     // no-bare-urls.ts
     'no-bare-urls': {
       'name': 'bare URLを許可しない',
-      'description': 'バッククォート、角括弧、またはシングルクォートやダブルクォートで囲まれていないbare URLを山括弧で囲みます。',
+      'description': 'バッククォート、角括弧、またはシングルクォートやダブルクォートで囲まれていないbare URLを山括弧(<code>&gt;&lt;</code>)で囲みます。',
       'no-bare-uris': {
         'name': 'bare URIを許可しない',
-        'description': 'バッククォート、角括弧、またはシングルクォートやダブルクォートで囲まれていないbare URIを山括弧で囲もうとします。',
+        'description': 'バッククォート、角括弧、またはシングルクォートやダブルクォートで囲まれていないbare URIを山括弧(<code>&gt;&lt;</code>)で囲もうとします。',
       },
     },
     // ordered-list-style.ts
     'ordered-list-style': {
       'name': '順序付きリストのスタイル',
-      'description': '順序付きリストが指定されたスタイルに従っていることを確認します。<b>注：2つのスペースまたは1つのタブはインデントレベルと見な</b>',
+      'description': '順序付きリストが指定されたスタイルに従っていることを確認します。<b>注：2つのスペースまたは1つのタブはインデントレベルと見なす。</b>',
       'number-style': {
         'name': '数字のスタイル',
         'description': '順序付きリストのインジケーターで使用される数字のスタイル',
@@ -583,7 +584,7 @@ export default {
     // paragraph-blank-lines.ts
     'paragraph-blank-lines': {
       'name': '段落の空行',
-      'description': 'すべての段落の前後に正確に1行の空白行があることを確認します。',
+      'description': 'すべての段落の前後に、正確に1行の空白行があることを確認します。',
     },
     // prevent-double-checklist-indicator-on-paste.ts
     'prevent-double-checklist-indicator-on-paste': {
@@ -608,7 +609,7 @@ export default {
     // quote-style.ts
     'quote-style': {
       'name': '引用符のスタイル',
-      'description': '本文の引用符を指定されたシングルおよびダブル引用符のスタイルに更新します。',
+      'description': '本文の引用符を、指定されたシングルおよびダブル引用符のスタイルに更新します。',
       'single-quote-enabled': {
         'name': 'シングル引用符のスタイルを有効にする',
         'description': '指定されたシングル引用符のスタイルを使用することを指定します。',
@@ -629,7 +630,7 @@ export default {
     // re-index-footnotes.ts
     're-index-footnotes': {
       'name': '脚注の再インデックス化',
-      'description': '発生順に基づいて脚注キーと脚注を再インデックス化します。<b>注：このルールは、キーに対して複数の脚注がある場合は<i>機能しません</i>。</b>',
+      'description': '発生順に基づいて脚注キーと脚注を再インデックス化します。<b>注：このルールは、キーに対して複数の脚注がある場合は、<i>機能しません</i>。</b>',
     },
     // remove-consecutive-list-markers.ts
     'remove-consecutive-list-markers': {
@@ -664,7 +665,7 @@ export default {
     // remove-leading-or-trailing-whitespace-on-paste.ts
     'remove-leading-or-trailing-whitespace-on-paste': {
       'name': '貼り付け時の先頭または末尾の空白を削除',
-      'description': '貼り付けるテキストの先頭のタブ以外の空白と末尾の空白をすべて削除します。',
+      'description': '貼り付けるテキストの、先頭のタブ以外の空白と、末尾の空白をすべて削除します。',
     },
     // remove-leftover-footnotes-from-quote-on-paste.ts
     'remove-leftover-footnotes-from-quote-on-paste': {
@@ -674,12 +675,12 @@ export default {
     // remove-link-spacing.ts
     'remove-link-spacing': {
       'name': 'リンクの間隔を削除',
-      'description': 'リンクテキストの周りの間隔を削除します。',
+      'description': 'リンクテキストの周りの空行を削除します。',
     },
     // remove-multiple-blank-lines-on-paste.ts
     'remove-multiple-blank-lines-on-paste': {
       'name': '貼り付け時の複数の空行を削除',
-      'description': '貼り付けるテキストの複数の空行を1つの空行にまとめます。',
+      'description': '貼り付けるテキストの、複数の空行を、1つの空行にまとめます。',
     },
     // remove-multiple-spaces.ts
     'remove-multiple-spaces': {
@@ -704,7 +705,7 @@ export default {
       },
       'other-symbols': {
         'name': 'その他の記号',
-        'description': '含めるその他の記号（スペースまたはタブで囲まれるべきでない記号）のリスト',
+        'description': 'その他の含める記号のリスト',
       },
     },
     // remove-space-before-or-after-characters.ts
@@ -723,10 +724,10 @@ export default {
     // remove-trailing-punctuation-in-heading.ts
     'remove-trailing-punctuation-in-heading': {
       'name': '見出しの末尾の句読点を削除',
-      'description': '見出しの末尾から指定された句読点を削除します。<a href="https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references">HTMLエンティティ参照</a>の末尾のセミコロンは無視されます。',
+      'description': '見出しの末尾から、指定された句読点を削除します。<a href="https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references">HTMLエンティティ参照</a>の末尾のセミコロンは無視されます。',
       'punctuation-to-remove': {
         'name': '末尾の句読点',
-        'description': 'ファイル内の見出しから削除する末尾の句読点。各句読点は新しい行に記述します。',
+        'description': 'ファイル内の見出しから削除する末尾の句読点。',
       },
     },
     // remove-yaml-keys.ts
@@ -741,7 +742,7 @@ export default {
     // sort-yaml-array-values.ts
     'sort-yaml-array-values': {
       'name': 'YAML配列の値をソート',
-      'description': '指定されたソート順に基づいてYAML配列の値をソートします。',
+      'description': '指定されたソート順に基づいて、YAML配列の値をソートします。',
       'sort-alias-key': {
         'name': 'YAMLエイリアスセクションをソート',
         'description': 'エイリアスのソートを有効にします。',
@@ -766,19 +767,19 @@ export default {
     // space-after-list-markers.ts
     'space-after-list-markers': {
       'name': 'リストマーカーの後のスペース',
-      'description': 'リストマーカーとチェックボックスの後には単一のスペースが必要です。',
+      'description': 'リストマーカーとチェックボックスの後には、単一のスペースが必要です。',
     },
     // space-between-chinese-japanese-or-korean-and-english-or-numbers.ts
     'space-between-chinese-japanese-or-korean-and-english-or-numbers': {
       'name': '中国語、日本語、韓国語と英語または数字の間のスペース',
       'description': '中国語、日本語、韓国語と英語または数字の間に単一のスペースがあることを確認します。これらの<a href="https://github.com/sparanoid/chinese-copywriting-guidelines">ガイドライン</a>に従います。',
       'english-symbols-punctuation-before': {
-        'name': 'CJKの前の英語の句読点と記号',
-        'description': '中国語、日本語、韓国語の文字の前にある場合に英語と見なされる非文字の句読点と記号のリスト。<b>注：「*」は常に英語と見なされ、一部のマークダウン構文を適切に処理するために必要です。</b>',
+        'name': 'CJKの前の英語の、句読点と記号',
+        'description': '中国語、日本語、韓国語の文字の前にある場合に、英語と見なされる非文字の句読点と記号のリスト。<b>注：「*」は常に英語と見なされ、一部のマークダウン構文を適切に処理するために必要です。</b>',
       },
       'english-symbols-punctuation-after': {
-        'name': 'CJKの後の英語の句読点と記号',
-        'description': '中国語、日本語、韓国語の文字の後にある場合に英語と見なされる非文字の句読点と記号のリスト。<b>注：「*」は常に英語と見なされ、一部のマークダウン構文を適切に処理するために必要です。</b>',
+        'name': 'CJKの後の英語の、句読点と記号',
+        'description': '中国語、日本語、韓国語の文字の後にある場合に、英語と見なされる非文字の句読点と記号のリスト。<b>注：「*」は常に英語と見なされ、一部のマークダウン構文を適切に処理するために必要です。</b>',
       },
     },
     // strong-style.ts
@@ -796,13 +797,13 @@ export default {
       'description': '各行の余分な空白を削除します。',
       'two-space-line-break': {
         'name': '二重スペースの改行',
-        'description': '改行に続く二重スペース（「二重スペースルール」）を無視します。',
+        'description': '改行に続く二重スペース（"二重スペースルール"）を無視します。',
       },
     },
     // two-spaces-between-lines-with-content.ts
     'two-spaces-between-lines-with-content': {
       'name': '内容のある行間の改行',
-      'description': '段落、引用、リスト項目の次の行に内容が続く行の末尾に指定された改行が追加されていることを確認します。',
+      'description': '段落、引用、リスト項目の次の行に内容が続く行の末尾に、指定された改行が追加されていることを確認します。',
       'line-break-indicator': {
         'name': '改行インジケーター',
         'description': '使用する改行インジケーター。',
@@ -823,11 +824,11 @@ export default {
       'description': '指定された順序と優先順位に基づいてYAMLキーをソートします。<b>注：空行も削除する場合があります。ネストされていないキーにのみ機能します。</b>',
       'yaml-key-priority-sort-order': {
         'name': 'YAMLキー優先ソート順',
-        'description': 'リストに見つかった順序でソートされる各行に1つずつキーを並べる順序',
+        'description': 'リストに見つかった順序でソートされる各行に、1つずつキーを並べる順序',
       },
       'priority-keys-at-start-of-yaml': {
         'name': 'YAMLの先頭にある優先キー',
-        'description': 'YAMLキー優先ソート順はYAML front-matter の先頭に配置されます',
+        'description': 'YAMLキー優先ソート順は YAML front-matter の先頭に配置されます',
       },
       'yaml-sort-order-for-other-keys': {
         'name': 'その他のキーのYAMLソート順',
@@ -848,11 +849,11 @@ export default {
       },
       'date-created-source-of-truth': {
         'name': '作成日の真実の情報源',
-        'description': '作成日がすでにfront-matter に存在する場合に、作成日値を取得する場所を指定します。',
+        'description': '作成日がすでに front-matter に存在する場合に、作成日を取得する場所を指定します。',
       },
       'date-modified-source-of-truth': {
         'name': '更新日の真実の情報源',
-        'description': '更新日がすでにfront-matter に存在する場合に、更新日値を取得する場所を指定します。',
+        'description': '更新日がすでに front-matter に存在する場合に、更新日が更新されるべき時を、どの手段を用いるかを指定します。',
       },
       'date-modified': {
         'name': '更新日',
@@ -864,24 +865,24 @@ export default {
       },
       'format': {
         'name': 'フォーマット',
-        'description': '使用するMoment日付フォーマット（<a href="https://momentjscom.readthedocs.io/en/latest/moment/04-displaying/01-format/">Momentフォーマットオプション</a>を参照）',
+        'description': '使用するmoment dateフォーマット（<a href="https://momentjscom.readthedocs.io/en/latest/moment/04-displaying/01-format/">moment dateフォーマットオプション</a>を参照）',
       },
       'convert-to-utc': {
         'name': 'ローカル時間をUTCに変換',
-        'description': '保存された日付にローカル時間の代わりにUTCの同等物を使用します',
+        'description': '保存された日付を、ローカル時間の代わりにUTCのを使用します',
       },
       'update-on-file-contents-updated': {
         'name': 'ファイル内容の更新時にYAMLタイムスタンプを更新',
-        'description': '現在アクティブなノートが変更されると、<code>YAML Timestamp</code>がノートで実行されます。これにより、現在の値から5秒以上ずれている場合は、変更されたノートのタイムスタンプが更新されるはずです。',
+        'description': '現在アクティブなノートが変更されると、"YAMLタイムスタンプ"で実行されます。これにより、現在の値から5秒以上ずれている場合は、変更されたノートのタイムスタンプが更新されるはずです。',
       },
     },
     // yaml-title-alias.ts
     'yaml-title-alias': {
       'name': 'YAMLタイトルエイリアス',
-      'description': 'ファイルのタイトルをYAML front-matter のエイリアスセクションに挿入または更新します。タイトルは最初のH1またはファイル名から取得します。',
+      'description': 'ファイルのタイトルを YAML front-matter のエイリアスセクションに挿入または更新します。タイトルは最初のH1またはファイル名から取得します。',
       'preserve-existing-alias-section-style': {
         'name': '既存のエイリアスセクションのスタイルを保持',
-        'description': '設定されている場合、<code>YAML aliases section style</code>の設定は新しく作成されたセクションにのみ適用されます',
+        'description': '設定されている場合、"YAMLエイリアスセクションスタイル"の設定は、新しく作成されたセクションにのみ適用されます',
       },
       'keep-alias-that-matches-the-filename': {
         'name': 'ファイル名と一致するエイリアスを保持',
@@ -889,17 +890,17 @@ export default {
       },
       'use-yaml-key-to-keep-track-of-old-filename-or-heading': {
         'name': '<code>Alias Helper Key</code>で指定されたYAMLキーを使用して、ファイル名と見出しの変更を支援します',
-        'description': '設定されている場合、最初のH1見出しが変更された場合、または最初のH1が存在しない場合はファイル名が変更された場合、このキーに保存されている古いエイリアスは、新しい値に置き換えられます。エイリアス配列に新しいエントリを挿入するだけではありません。',
+        'description': '設定されている場合、最初のH1見出しが変更された場合、または最初のH1が存在しない場合はファイル名が変更された場合に、このキーに保存されている古いエイリアスは、新しい値に置き換えられます。エイリアス配列に新しいエントリを挿入するだけではありません。',
       },
       'alias-helper-key': {
         'name': 'Alias Helper Key',
-        'description': 'このルールによってfront-matter に保存された最後のファイル名または見出しを追跡するために使用するキー。',
+        'description': 'このルールによって front-matter に保存された最後のファイル名または見出しを追跡するために使用するキー。',
       },
     },
     // yaml-title.ts
     'yaml-title': {
       'name': 'YAMLタイトル',
-      'description': 'ファイルのタイトルをYAML front-matter に挿入します。選択したモードに基づいてタイトルを取得します。',
+      'description': 'ファイルのタイトルを YAML front-matter に挿入します。選択したモードに基づいてタイトルを取得します。',
       'title-key': {
         'name': 'タイトルキー',
         'description': 'タイトルに使用するYAMLキー',
